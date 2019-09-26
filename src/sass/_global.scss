@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: $color-background;
+  font-family: $font-main;
+  font-size: $font-txt;
+  color: $color-grey;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  padding: 0;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: $font-semibold;
+  line-height: 42px;
+  text-transform: uppercase;
+}
+
+a {
+  font-size: $font-line-header;
+  font-weight: $font-light;
+  color: $color-link;
+  text-decoration: none;
+}
+
+.btn-orange {
+  border-radius: 2px;
+  width: 127px;
+  height: 40px;
+  background-color: $color-button;
+  color: $color-light;
+  font-size: $font-button;
+  font-weight: $font-light;
+  cursor: pointer;
+}
+
+.btn-dollar {
+  color: $color-dollar;
+  font-size: $font-dollar;
+  font-weight: $font-normal;
+  line-height: 42px;
+}

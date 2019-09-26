@@ -1,0 +1,76 @@
+.header-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  right: 0;
+  z-index: 4;
+}
+
+.header-icon-wrapper {
+  fill: $color-icons;
+  height: 100%;
+  border-left: 2px solid $color-button-disabled;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.header-icon-wrapper:hover {
+  box-shadow: 0px 5px 20px -10px rgba(0, 0, 0, 0.57);
+  transition: $transition-hover;
+}
+
+.dollars {
+  width: 185px;
+
+  p {
+    color: $color-dollar;
+    font-size: $font-dollar;
+    font-weight: $font-normal;
+    margin: 0 16px 0 20px;
+  }
+}
+
+.ring,
+.quit {
+  width: 57px;
+}
+
+.name {
+  width: 172px;
+
+  a {
+    font-size: $font-small-link;
+    font-weight: $font-light;
+    margin-left: 14px;
+  }
+}
+
+.icon-wallet {
+  width: 17px;
+  height: 18px;
+}
+
+.icon-arrow {
+  width: 11px;
+  height: 7px;
+}
+
+.icon-ring {
+  width: 16px;
+  height: 17px;
+}
+
+.icon-name {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  border: 1px solid $color-icons;
+}
+
+.icon-quit {
+  width: 19px;
+  height: 15px;
+}

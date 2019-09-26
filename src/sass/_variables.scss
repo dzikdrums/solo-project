@@ -1,0 +1,44 @@
+// Colors
+$color-grey: #a6a6a6;
+$color-link: #56819f;
+$color-orange-active: #ffa200;
+$color-dark: #333;
+$color-button: #f58220;
+$color-grey-button: #979797;
+$color-grey-button-hover: #bababa;
+$color-button-disabled: #e3e3e3;
+$color-checkbox: #04ae00;
+$color-border-red: #ff0000;
+$color-sidebar-background: #191919;
+$color-sidebar-active: #282828;
+$color-rectangle-teal: #80bfca;
+$color-rectangle-orange: #ff9a38;
+$color-earned: #59b66d;
+$color-background: #f5f5f2;
+$color-light: #fff;
+$color-dollar: #9c9c9c;
+$color-icons: #818181;
+$color-hamburger: #646464;
+
+// Font sizes
+$font-header: 16px;
+$font-txt: 14px;
+$font-small-link: 13px;
+$font-line-header: 16px;
+$font-button: 18px;
+$font-messenger: 11px;
+$font-messenger-name: 30px;
+$font-dollar: 20px;
+
+// Font weights
+$font-light: 300;
+$font-normal: 400;
+$font-semibold: 500;
+$font-bold: 700;
+
+// Fonts
+$font-main: "Roboto", Helvetica, Arial;
+
+// Transitions
+$transition-main: transform 0.2s 0.1s ease-in-out;
+$transition-hover: all 0.1s ease 0s;
