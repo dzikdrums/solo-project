@@ -1,0 +1,123 @@
+@media (max-width: 720px) {
+  // BURGER
+  .sidebar {
+    transform: translateX(-188px);
+  }
+
+  .navigation-active {
+    transform: translateX(0px);
+  }
+
+  .content-wrapper {
+    transform: translateX(-188px);
+    transition: transform 0.2s 0.1s ease-in-out;
+    width: 100%;
+  }
+
+  .content-wrapper-active {
+    transform: translateX(0px);
+    transition: transform 0.2s 0.1s ease-in-out;
+  }
+
+  .hamburger {
+    display: inline-block;
+  }
+
+  // HEADER
+
+  .header {
+    position: static;
+  }
+
+  .header-wrapper {
+    transform: translateX(-188px);
+    background-color: #191919;
+    height: 240px;
+    width: 188px;
+    position: fixed;
+    flex-direction: column;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+
+    .dollars {
+      padding-left: 13px;
+    }
+
+    .name {
+      padding-left: 5px;
+    }
+  }
+
+  .header-wrapper-active {
+    transform: translateX(0px);
+    transition: transform 0.2s 0.1s ease-in-out;
+  }
+
+  .header-icon-wrapper {
+    height: 40px;
+    border: none;
+  }
+
+  // LINKS
+  .links-lists-wrapper {
+    width: 90%;
+  }
+
+  .links {
+    flex-direction: column;
+  }
+
+  .signups-list li {
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      font-size: 14px;
+    }
+  }
+
+  .personal-data-wrapper {
+    width: 100%;
+  }
+
+  .form-row {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .links-lists-wrapper {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1250px) {
+  .linked {
+    flex-direction: column;
+    padding-bottom: 10px;
+  }
+
+  .linked-title,
+  .linked-link {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .links-list li:hover {
+    .link_svg {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+
+    .trash_svg {
+      margin-right: 5px;
+    }
+  }
+
+  .button-wrapper {
+    padding-bottom: 20px;
+  }
+}

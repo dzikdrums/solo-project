@@ -1,0 +1,20 @@
+//Settings
+@import "variables";
+@import "mixins";
+@import "normalize";
+@import "global";
+
+// Components
+@import "components/sidebar";
+@import "components/header";
+@import "components/statistic";
+@import "components/links";
+@import "components/hamburger";
+
+// Layouts
+@import "pages/front_layout";
+@import "pages/form_layout";
+@import "pages/links_layout";
+
+// Queries
+@import "queries";
