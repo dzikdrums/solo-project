@@ -48,34 +48,34 @@ for (let sidebarListItem of sidebarListItems) {
 //==========================
 
 function closeModal() {
-  document.getElementById('overlay').classList.remove('show')
+  document.getElementById('overlay').classList.remove('show');
 }
 
 document.querySelectorAll('#overlay .js--close-modal').forEach(function(btn) {
   btn.addEventListener('click', function(e) {
-    e.preventDefault()
-    closeModal()
-  })
-})
+    e.preventDefault();
+    closeModal();
+  });
+});
 
 document.querySelector('#overlay').addEventListener('click', function(e) {
   if(e.target === this) {
-    closeModal()
+    closeModal();
   }
-})
+});
 
 document.addEventListener('keyup', function(e) {
   if(e.keyCode === 27) {
-    closeModal()
+    closeModal();
   }
-})
+});
 
 function openModal(modal) {
   document.querySelectorAll('#overlay > *').forEach(function(modal) {
-    modal.classList.remove('show')
-  })
-  document.querySelector('#overlay').classList.add('show')
-  document.querySelector(modal).classList.add('show')
+    modal.classList.remove('show');
+  });
+  document.querySelector('#overlay').classList.add('show');
+  document.querySelector(modal).classList.add('show');
 }
 
 document.querySelector('.manager').addEventListener('click', function () {
@@ -100,8 +100,8 @@ var chart = new Chart(ctx, {
   // 1
   type: 'bar',
   data: {
-      // 2
-      labels: ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10"],
+    // 2
+    labels: ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10"],
       // 3
       datasets: [{
           // 4
