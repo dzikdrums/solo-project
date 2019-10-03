@@ -1,27 +1,26 @@
-.logo {
-  margin: 18px 20px 20px;
+.sidebar__logo {
+  margin: 25px 40px 30px;
 }
 
-.sidebar-list {
+.sidebar__list {
   margin-top: 0;
   padding-bottom: 41px;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid $text-color;
 }
 
-.sidebar-list-item {
+.sidebar__list-item {
+  @include flex(row, center, flex-start);
   height: 40px;
-  display: flex;
-  align-items: center;
-  color: $color-icons;
+  color: $manager-color;
   cursor: pointer;
 
-  &.active {
-    background-color: $color-sidebar-active;
-    color: $color-light;
-    border-left: 4px solid $color-orange-active;
+  &-active {
+    background-color: $bgMainMenuHover;
+    color: $btnFont-color;
+    border-left: 4px solid $orangeBtnHover-color;
 
     .icon {
-      fill: $color-light;
+      fill: $btnFont-color;
     }
   }
 }
@@ -31,8 +30,8 @@
   width: 10px;
 }
 
-.sidebar-list-item:hover {
-  color: $color-orange-active;
+.sidebar__list-item:hover {
+  color: $orangeBtnHover-color;
   font-weight: 700;
   letter-spacing: 1px;
   background: none;
@@ -40,24 +39,24 @@
 }
 
 .icon {
-  fill: $color-dollar;
+  fill: $walletP-color;
   height: 15px;
   width: 16px;
   margin-right: 13px;
   margin-left: 18px;
 }
 
-.manager-title {
+.sidebar__manager-title {
   margin: 0;
   padding-left: 20px;
-  font-size: $font-txt;
+  font: $manager-font;
   letter-spacing: -0.28px;
-  color: #808080;
+  color: $manager-color;
 }
 
-.manager-name {
-  display: flex;
-  align-items: center;
+.sidebar__manager-name {
+  @include flex(row, center, flex-start);
+
   padding-top: 10px;
 
   img {
@@ -65,6 +64,6 @@
   }
 
   a {
-    font-size: $font-txt;
+    font: $manager-font;
   }
 }

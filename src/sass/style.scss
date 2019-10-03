@@ -5,16 +5,13 @@
 @import "global";
 
 // Components
-@import "components/sidebar";
-@import "components/header";
-@import "components/statistic";
-@import "components/links";
-@import "components/hamburger";
+@import "components";
+
+// Sections
+@import "sections";
 
 // Layouts
 @import "pages/front_layout";
-@import "pages/form_layout";
-@import "pages/links_layout";
 
 // Queries
 @import "queries";

@@ -1,40 +1,40 @@
 .links-lists {
-  display: flex;
-  justify-content: center;
+  @include flex(row, center, center);
 }
 
 .links-lists-wrapper {
   width: 60%;
 }
 
-.general-inks {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.links,
+.banners {
+  @include flex(column, center, center);
+
   margin-bottom: 18px;
 }
 
 .linked {
+  @include flex(column, center, space-between);
+
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-top: 2px solid $color-button-disabled;
+  border-top: 2px solid $disabledBtn-color;
+}
+
+.linked-title-wrapper {
+  @include flex(row , center, center);
+
+  width: 40%;
+  padding-left: 10px;
 }
 
 .linked-title {
-  width: 40%;
-  padding-left: 10px;
-
-  h2 {
-    text-transform: none;
-  }
+  font: $largeLink-font;
+  color: $greyBtn-color;
 }
 
 .linked-link {
   width: 60%;
-  display: flex;
-  justify-content: space-between;
+  @include flex(row, center, center);
 }
 
 .link_svg,
@@ -44,32 +44,26 @@
 }
 
 .links-list li:hover {
-  background-color: #f1f3f3;
+  background-color: $bgTableHover-color;
   transition: $transition-main;
 
   .link_svg {
     display: inline-block;
     width: 16px;
     height: 8px;
-    fill: #f58220;
+    fill: $circleTabOrange-color;
     margin-right: 20px;
   }
 
   .trash_svg {
     display: inline-block;
-    fill: $color-dollar;
+    fill: $walletP-color;
     width: 14px;
     height: 15px;
     margin-right: 20px;
   }
 }
 
-.btn-add {
-  margin-top: 23px;
-  margin-bottom: 26px;
-}
-
 .button-wrapper {
-  display: flex;
-  justify-content: center;
+  @include flex(row, center, center);
 }

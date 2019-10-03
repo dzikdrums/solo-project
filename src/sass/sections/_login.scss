@@ -1,0 +1,20 @@
+.login_footer {
+    @include flex(row, center, center);
+}
+
+.login__input {
+    @include flex(row, center, center);
+}
+
+.login__input-field {
+    width: 100%;
+    border: 1px solid $disabledBtn-color;
+    outline: none;
+    padding: 15px 20px;
+    margin: 25px 25px;
+
+    &::-webkit-input-placeholder {
+        color: $headers-color;
+        font: $smallLink-font;
+      }
+}
