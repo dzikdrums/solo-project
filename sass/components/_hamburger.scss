@@ -19,6 +19,8 @@
 .hamburger-active {
   z-index: 4;
   transform: translatex(188px);
+  position: fixed;
+  outline: none;
 }
 
 .hamburger-box {
@@ -27,13 +29,6 @@
   display: inline-block;
   position: relative;
   z-index: 1;
-}
-
-@mixin hamburger-line {
-  width: 100%;
-  height: 3px;
-  background-color: $color-hamburger;
-  position: absolute;
 }
 
 .hamburger-inner {

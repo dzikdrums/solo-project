@@ -1,0 +1,19 @@
+.signups-list-item {
+  @include flex(row, center, space-between);
+
+  width: 100%;
+  border-bottom: 2px solid $disabledBtn-color;
+  margin-top: 22px;
+  padding-bottom: 5px;
+
+  &-title {
+    font: $sectionHeader-font;
+    margin: 0;
+    color: $greyBtn-color;
+  }
+
+  &-amount {
+    color: $greyBtn-color;
+    margin: 0;
+  }
+}

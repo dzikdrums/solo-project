@@ -1,43 +1,50 @@
-// Colors
-$color-grey: #a6a6a6;
-$color-link: #56819f;
-$color-orange-active: #ffa200;
-$color-dark: #333;
-$color-button: #f58220;
-$color-grey-button: #979797;
-$color-grey-button-hover: #bababa;
-$color-button-disabled: #e3e3e3;
-$color-checkbox: #04ae00;
-$color-border-red: #ff0000;
-$color-sidebar-background: #191919;
-$color-sidebar-active: #282828;
-$color-rectangle-teal: #80bfca;
-$color-rectangle-orange: #ff9a38;
-$color-earned: #59b66d;
-$color-background: #f5f5f2;
-$color-light: #fff;
-$color-dollar: #9c9c9c;
-$color-icons: #818181;
-$color-hamburger: #646464;
+/* Colors */
+$text-color: #333333;
+$headers-color: #a6a6a6;
+$greyBtn-color: #979797;
+$greyBtnHover-color: #bababa;
+$disabledBtn-color: #e3e3e3;
+$btnFont-color: #ffffff;
+$bgTopButton-color: #f5f5f2;
+$orangeBtn-color: #f58220;
+$orangeBtnHover-color: #ffa200;
+$greenCheckBox-color: #04ae00;
+$bgCheckBoxHover: #f2f2f2;
+$positiveNotification-color: #96cc9b;
+$positiveNotificationHover-color: #74b67a;
+$negativeNotification-color: #ec7171;
+$negativeNotificationHover-color: #de5252;
+$link-color: #56819f;
+$redBorderForm-color: #ff0000;
+$greyBorderForm-color: #b1b1b1;
+$circleTab-color: #80bfca;
+$bgTab-color: #f3f3f1;
+$bgTableHover-color: #f1f3f3;
+$tableDigit-color: #191919;
+$tableArrowUp-color: #a4a4a4;
+$manager-color: #808080;
+$bgMainMenuHover: #282828;
+$hamburger-color: #999999;
+$walletP-color: #9c9c9c;
+$circleTabGreen-color: #59b66d;
+$circleTabOrange-color: #ff9a38;
 
-// Font sizes
-$font-header: 16px;
-$font-txt: 14px;
-$font-small-link: 13px;
-$font-line-header: 16px;
-$font-button: 18px;
-$font-messenger: 11px;
-$font-messenger-name: 30px;
-$font-dollar: 20px;
-
-// Font weights
-$font-light: 300;
-$font-normal: 400;
-$font-semibold: 500;
-$font-bold: 700;
-
-// Fonts
-$font-main: "Roboto", Helvetica, Arial;
+/* Fonts */
+$pageHeader-font: 500 16px/42px "Roboto", sans-serif;
+$sectionHeader-font: 400 16px/42px "Roboto", sans-serif;
+$compoHeader-font: 300 11px/42px "Roboto", sans-serif;
+$text-font: 400 14px/42px "Roboto", sans-serif;
+$largeLink-font: 400 18px/17px "Roboto", sans-serif;
+$smallLink-font: 300 13px/42px "Roboto", sans-serif;
+$btn-font: 300 18px/42px "Roboto", sans-serif;
+$textInput-font: 300 12px/18px "Roboto", sans-serif;
+$tabs-font: 300 16px/42px "Roboto", sans-serif;
+$tablesLineHeader-font: 700 16px/17px "Roboto", sans-serif;
+$thTable-font: 700 13px/15px "Roboto", sans-serif;
+$tdTableSorted-font: 300 13px/17px "Roboto", sans-serif;
+$nameUser-font: 500 30px/42px "Roboto", sans-serif;
+$manager-font: 500 14px/42px "Roboto", sans-serif;
+$wallet-font: 500 20px/42px "Roboto", sans-serif;
 
 // Transitions
 $transition-main: transform 0.2s 0.1s ease-in-out;
