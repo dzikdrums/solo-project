@@ -6,11 +6,13 @@
 
 .table__inner {
     width: 90%;
+    overflow: auto;
 }
 
 table {
     border-collapse: collapse;
     width: 100%;
+    overflow: auto;
 }
 
 td, th {

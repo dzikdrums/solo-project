@@ -1,1664 +1,1842 @@
 <!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solo Project 1</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/vendor/fontawesome/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Solo Project 1</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-
-<body>
-  <div class="container-fluid">
-    <div class="header-whitebar">
-    </div>
-    <button class="hamburger">
-      <span class="hamburger-box">
-        <span class="hamburger-inner"></span>
-      </span>
-    </button>
-    <nav class="sidebar">
-      <img class="sidebar__logo" src="/images/logo.png" alt="logo of the company" />
-      <div class="sidebar__inner">
-        <ul class="sidebar__list">
-          <li class="sidebar__list-item sidebar__list-item-active" data-tags="general">
-            <svg version="1.1" class="icon" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 16"
-              style="enable-background:new 0 0 17 16;" xml:space="preserve">
-              <path
-                d="M8.5,3.6l0.9,2.7L9.6,7h0.7h2.8l-2.3,1.6l-0.6,0.4l0.2,0.7l0.9,2.7l-2.3-1.6l-0.6-0.4l-0.6,0.4l-2.3,1.6l0.9-2.7l0.2-0.7
-                 L6.1,8.6L3.9,7h2.8h0.7l0.2-0.7L8.5,3.6 M8.5,0.4L6.7,6H0.8l4.8,3.5L3.7,15l4.8-3.5l4.8,3.5l-1.8-5.6L16.2,6h-5.9L8.5,0.4L8.5,0.4z" />
-            </svg>General
-          </li>
-          <li class="sidebar__list-item" data-tags="details">
-            <svg version="1.1" class="icon" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 13"
-              style="enable-background:new 0 0 14 13;" xml:space="preserve">
-              <path
-                d="M0,13h14v-1H0V13z M0,10h14V6H0V10z M9,7h4v2H9V7z M1,7h7v2H1V7z M0,0v4h14V0H0z M5,3H1V1h4V3z M13,3H6V1h7V3z" />
-            </svg>
-            Details
-          </li>
-          <li class="sidebar__list-item" data-tags="links">
-            <svg version="1.1" class="icon" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 10"
-              style="enable-background:new 0 0 18 10;" xml:space="preserve">
-              <path
-                d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
-                    C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z" />
-            </svg>Links
-          </li>
-          <li class="sidebar__list-item" data-tags="banners">
-            <svg version="1.1" class="icon" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 13"
-              style="enable-background:new 0 0 14 13;" xml:space="preserve">
-              <path d="M0,6h6V0H0V6z M1,1h4v4H1V1z M8,0v8h6V0H8z M13,7H9V1h4V7z M0,13h6V8H0V13z M1,9h4v3H1V9z M8,13h6v-3H8V13z M9,11h4v1H9V11z
-                    " />
-            </svg>
-            Banners
-          </li>
-          <li class="sidebar__list-item" data-tags="personal-data">
-            <svg version="1.1" class="icon" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 9 14"
-              style="enable-background:new 0 0 9 14;" xml:space="preserve">
-              <path d="M4.5,8C6.4,8,8,6.4,8,4.5S6.4,1,4.5,1S1,2.6,1,4.5S2.6,8,4.5,8z M4.5,2C5.9,2,7,3.1,7,4.5S5.9,7,4.5,7S2,5.9,2,4.5
-                    S3.1,2,4.5,2z M7.7,7.7L6.9,8.3C8,9.5,8,11.1,8,12.9V13H1v-0.1C1,11.1,1,9.5,2,8.3L1.3,7.7C0,9.1,0,10.9,0,12.9L0,14h9l0-1.1
-                    C9,10.9,9,9.1,7.7,7.7z" />
-            </svg>
-            Personal Data
-          </li>
-          <li class="sidebar__list-item" data-tags="payout">
-            <svg version="1.1" class="icon" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13 13"
-              style="enable-background:new 0 0 13 13;" xml:space="preserve">
-              <path d="M10.5,0h-8C1.1,0,0,1.1,0,2.5v8C0,11.9,1.1,13,2.5,13h8c1.4,0,2.5-1.1,2.5-2.5v-8C13,1.1,11.9,0,10.5,0z M1,10.5v-8
-                    C1,1.7,1.7,1,2.5,1H6v2H5C3.9,3,3,3.9,3,5s0.9,2,2,2h1v2H4v1h2v2H2.5C1.7,12,1,11.3,1,10.5z M6,4v2H5C4.4,6,4,5.6,4,5s0.4-1,1-1H6z
-                     M7,7h1c0.6,0,1,0.4,1,1c0,0.6-0.4,1-1,1H7V7z M12,10.5c0,0.8-0.7,1.5-1.5,1.5H7v-2h1c1.1,0,2-0.9,2-2c0-1.1-0.9-2-2-2H7V4h2V3H7V1
-                    h3.5C11.3,1,12,1.7,12,2.5V10.5z" />
-            </svg>
-            Payout
-          </li>
-          <li class="sidebar__list-item" data-tags="postback">
-            <svg version="1.1" class="icon" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 15"
-              style="enable-background:new 0 0 14 15;" xml:space="preserve">
-              <path d="M7.5,4H2.7l2.1-2.1L4.1,1.1L0.8,4.5l3.4,3.4l0.7-0.7L2.7,5h4.8C10,5,12,7,12,9.5S10,14,7.5,14H1v1h6.5c3,0,5.5-2.5,5.5-5.5
-                    C13,6.5,10.5,4,7.5,4z M8,11H1v1h7V11z" />
-            </svg>
-            Postback
-          </li>
-        </ul>
-        <h2 class="sidebar__manager-title">Your manager</h2>
-        <div class="sidebar__manager-name manager" id="manager-btn">
-          <img src="/images/2-layers.png" />
-          <a href="#">Mikhael E.</a>
-        </div>
-      </div>
-    </nav>
-    <div class="header">
-      <div class="header__item dollars">
-        <svg version="1.1" class="header__item-icon icon-wallet" xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 18"
-          style="enable-background:new 0 0 17 18;" xml:space="preserve">
-          <path
-            d="M17,9h-2V7.5C15,6.1,13.9,5,12.5,5H4.9L12,2.2V4h1V0.8L2.1,5C0.9,5.2,0,6.3,0,7.5v8C0,16.9,1.1,18,2.5,18h10
-                  c1.4,0,2.5-1.1,2.5-2.5V14h2V9z M14,15.5c0,0.8-0.7,1.5-1.5,1.5h-10C1.7,17,1,16.3,1,15.5v-8C1,6.7,1.7,6,2.5,6h10
-                  C13.3,6,14,6.7,14,7.5V9H8.5C7.1,9,6,10.1,6,11.5S7.1,14,8.5,14H14V15.5z M16,13H8.5C7.7,13,7,12.3,7,11.5S7.7,10,8.5,10H16V13z" />
-        </svg>
-
-        <p class="header__item-inner">$1,500.00</p>
-        <svg version="1.1" class="header__item-icon icon-arrow" xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 7 5"
-          style="enable-background:new 0 0 7 5;" xml:space="preserve">
-          <polygon points="3.5,4.2 0.1,0.9 0.9,0.1 3.5,2.8 6.1,0.1 6.9,0.9 " />
-        </svg>
-      </div>
-      <div class="header__item ring">
-        <svg version="1.1" class="header__item-icon icon-ring" xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 19"
-          style="enable-background:new 0 0 18 19;" xml:space="preserve">
-          <path d="M17,16l-2.4-3.7V6.5c0-3-2.5-5.5-5.5-5.5S3.6,3.5,3.6,6.5v5.8L1.1,16h5.5c0.2,1.1,1.2,2,2.4,2s2.2-0.9,2.4-2H17z M4.6,6.5
-                  C4.6,4,6.6,2,9.1,2s4.5,2,4.5,4.5V12h-9V6.5z M4.3,13h9.5l1.3,2H3L4.3,13z M9.1,17c-0.7,0-1.2-0.4-1.4-1h2.8
-                  C10.3,16.6,9.7,17,9.1,17z" />
-        </svg>
-      </div>
-      <div class="header__item name login">
-        <svg version="1.1" class="header__item-icon icon-name" xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 9 14"
-          style="enable-background:new 0 0 9 14;" xml:space="preserve">
-          <path d="M4.5,8C6.4,8,8,6.4,8,4.5S6.4,1,4.5,1S1,2.6,1,4.5S2.6,8,4.5,8z M4.5,2C5.9,2,7,3.1,7,4.5S5.9,7,4.5,7S2,5.9,2,4.5
-                  S3.1,2,4.5,2z M7.7,7.7L6.9,8.3C8,9.5,8,11.1,8,12.9V13H1v-0.1C1,11.1,1,9.5,2,8.3L1.3,7.7C0,9.1,0,10.9,0,12.9L0,14h9l0-1.1
-                  C9,10.9,9,9.1,7.7,7.7z" />
-        </svg>
-        <a href="#">Leonardo Dicaprio</a>
-      </div>
-      <div class="header__item quit">
-        <svg version="1.1" class="header__item-icon icon-quit" xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 19 15"
-          style="enable-background:new 0 0 19 15;" xml:space="preserve">
-          <path
-            d="M13.9,3.1l-0.7,0.7L16.3,7H3v1h13.3l-3.1,3.1l0.7,0.7l4.4-4.4L13.9,3.1z M10,14H1V1h9v3h1V0H0v15h11v-4h-1V14z" />
-        </svg>
-      </div>
-    </div>
-    <div class="content-wrapper">
-      <section class="general-statistic general">
-        <div class="section-heading">
-          <h2 class="section-heading-title">General statistic</h2>
-        </div>
-        <div class="subsection-dates dates">
-          <div class="dates-modules">
-            <input type="date" class="date" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31" />
-            <input type="date" class="date" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31" />
-          </div>
-          <button class="btn-orange date-button">
-            <svg version="1.1" class="icon-refresh" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 17"
-              style="enable-background:new 0 0 16 17;" xml:space="preserve">
-              <path d="M11,6h5V1h-1v3.3l-1.2-1.1c-2.9-2.9-7.7-2.9-10.6,0c-2.9,2.9-2.9,7.7,0,10.6C4.7,15.3,6.6,16,8.5,16s3.8-0.7,5.3-2.2
-                l-0.7-0.7c-2.5,2.5-6.7,2.5-9.2,0c-2.5-2.5-2.5-6.7,0-9.2c2.5-2.5,6.7-2.5,9.2,0L14.2,5H11V6z" />
-            </svg>
-          </button>
-        </div>
-        <div class="subsection-signups">
-          <div class="subsection-signups-wrapper">
-            <div class="subsection-signups-wrapper-list">
-              <ul class="signups-list">
-                <li class="signups-list-item">
-                  <h2 class="signups-list-item-title">Visit Signups</h2>
-                  <p class="signups-list-item-amount">124</p>
-                </li>
-                <li class="signups-list-item">
-                  <h2 class="signups-list-item-title">FTD</h2>
-                  <p class="signups-list-item-amount">445</p>
-                </li>
-              </ul>
-            </div>
-
-            <div class="subsection-signups-wrapper-list">
-              <ul class="signups-list">
-                <li class="signups-list-item">
-                  <h2 class="signups-list-item-title">Net deposit</h2>
-                  <p class="signups-list-item-amount">564</p>
-                </li>
-                <li class="signups-list-item">
-                  <h2 class="signups-list-item-title">Turn over</h2>
-                  <p class="signups-list-item-amount">432</p>
-                </li>
-              </ul>
-            </div>
+  <body>
+    <div class="container-fluid">
+      <div class="header-whitebar"></div>
+      <button class="hamburger">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      <nav class="sidebar">
+        <img
+          class="sidebar__logo"
+          src="/images/logo.png"
+          alt="logo of the company"
+        />
+        <div class="sidebar__inner">
+          <ul class="sidebar__list">
+            <li
+              class="sidebar__list-item sidebar__list-item-active"
+              data-tags="general"
+            >
+              <i class="far fa-star icon"></i>
+              General
+            </li>
+            <li class="sidebar__list-item" data-tags="details">
+              <i class="fas fa-chart-bar icon"></i>
+              Details
+            </li>
+            <li class="sidebar__list-item" data-tags="links">
+              <i class="fas fa-link icon"></i>
+              Links
+            </li>
+            <li class="sidebar__list-item" data-tags="banners">
+              <i class="fab fa-flipboard icon"></i>
+              Banners
+            </li>
+            <li class="sidebar__list-item" data-tags="personal-data">
+              <i class="fas fa-users icon"></i>
+              Personal Data
+            </li>
+            <li class="sidebar__list-item" data-tags="payout">
+              <i class="fas fa-money-bill-wave-alt icon"></i>
+              Payout
+            </li>
+            <li class="sidebar__list-item" data-tags="postback">
+              <i class="fas fa-file-invoice icon"></i>
+              Postback
+            </li>
+          </ul>
+          <h2 class="sidebar__manager-title">Your manager</h2>
+          <div class="sidebar__manager-name manager" id="manager-btn">
+            <img src="/images/2-layers.png" />
+            <a href="#">Mikhael E.</a>
           </div>
         </div>
-        <div class="earning-chart">
-          <div class="earning-chart-wrapper">
-            <h2 class="earning-chart-title">Earning chart</h2>
-            <div class="chart">
+      </nav>
+      <div class="header">
+        <div class="header__item dollars">
+          <i class="fas fa-wallet fa-lg icon-wallet"></i>
+          <p class="header__item-inner">$1,500.00</p>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="header__item ring">
+          <i class="fas fa-bell"></i>
+        </div>
+        <div class="header__item name login">
+          <i class="fas fa-user"></i>
+          <a href="#">Leonardo Dicaprio</a>
+        </div>
+        <div class="header__item quit">
+          <i class="fas fa-door-open"></i>
+        </div>
+      </div>
+      <div class="content-wrapper">
+        <section class="general-statistic general">
+          <div class="section-heading">
+            <h2 class="section-heading-title">General statistic</h2>
+          </div>
+          <div class="subsection-dates dates">
+            <div class="dates-modules">
+              <input
+                type="date"
+                class="date"
+                name="trip-start"
+                value="2018-07-22"
+                min="2018-01-01"
+                max="2018-12-31"
+              />
+              <input
+                type="date"
+                class="date"
+                name="trip-start"
+                value="2018-07-22"
+                min="2018-01-01"
+                max="2018-12-31"
+              />
+            </div>
+            <button class="btn-orange date-button">
+              <i class="fas fa-sync-alt refresh-icon"></i>
+            </button>
+          </div>
+          <div class="subsection-signups">
+            <div class="subsection-signups-wrapper">
+              <div class="subsection-signups-wrapper-list">
+                <ul class="signups-list">
+                  <li class="signups-list-item">
+                    <h2 class="signups-list-item-title">Visit Signups</h2>
+                    <p class="signups-list-item-amount">124</p>
+                  </li>
+                  <li class="signups-list-item">
+                    <h2 class="signups-list-item-title">FTD</h2>
+                    <p class="signups-list-item-amount">445</p>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="subsection-signups-wrapper-list">
+                <ul class="signups-list">
+                  <li class="signups-list-item">
+                    <h2 class="signups-list-item-title">Net deposit</h2>
+                    <p class="signups-list-item-amount">564</p>
+                  </li>
+                  <li class="signups-list-item">
+                    <h2 class="signups-list-item-title">Turn over</h2>
+                    <p class="signups-list-item-amount">432</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="earning-chart">
+            <div class="earning-chart-wrapper">
+              <h2 class="earning-chart-title">Earning chart</h2>
+              <div class="chart">
                 <canvas id="myChart"></canvas>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section class="table details">
+        </section>
+        <section class="table details">
           <div class="section-heading">
-              <h2 class="section-heading-title">Details</h2>
-            </div>
-            <div class="subsection-dates dates">
-              <div class="dates-modules">
-                <input type="date" class="date" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31" />
-                <input type="date" class="date" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31" />
-              </div>
-              <button class="btn-orange date-button">
-                <svg version="1.1" class="icon-refresh" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 17"
-                  style="enable-background:new 0 0 16 17;" xml:space="preserve">
-                  <path d="M11,6h5V1h-1v3.3l-1.2-1.1c-2.9-2.9-7.7-2.9-10.6,0c-2.9,2.9-2.9,7.7,0,10.6C4.7,15.3,6.6,16,8.5,16s3.8-0.7,5.3-2.2
-                    l-0.7-0.7c-2.5,2.5-6.7,2.5-9.2,0c-2.5-2.5-2.5-6.7,0-9.2c2.5-2.5,6.7-2.5,9.2,0L14.2,5H11V6z" />
-                </svg>
-              </button>
-            </div>
-            <div class="table__wrapper">
-              <div class="table__inner">
-          <table class="subpage__table table">
-              <thead class="subpage__table-thead table-thead">
-                  <tr class="table-thead-tr">
-                      <th class="table-thead-tr-th">
-                          <div class="table-thead-tr-th-thContainer">
-                              <p>Tracker name</p>
-                              <svg version="1.1" id="Layer_1" class="svg-arrow-up" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                              viewBox="0 0 11 7" style="enable-background:new 0 0 11 7;" xml:space="preserve">
-                              <polygon points="10.1,6.9 5.5,2.2 0.9,6.9 0.1,6.1 5.5,0.8 10.9,6.1 "/>
-                              </svg>                          
-                          </div>
-                      </th>
-                      <th class="table-thead-tr-th">
-                          <div class="table-thead-tr-th-thContainer">
-                              <p>Initiated date</p>
-                              <span class="table-thead-tr-th-thContainer-arrowUp"></span>
-                          </div>
-                      </th>
-                      <th class="table-thead-tr-th">
-                          <div class="table-thead-tr-th-thContainer">
-                              <p>Visits</p>
-                              <span class="table-thead-tr-th-thContainer-arrowUp"></span>
-                          </div>
-                      </th>
-                      <th class="table-thead-tr-th">
-                          <div class="table-thead-tr-th-thContainer">
-                              <p>Unique</p>
-                              <span class="table-thead-tr-th-thContainer-arrowUp"></span>
-                          </div>
-                      </th>
-                      <th class="table-thead-tr-th">
-                          <div class="table-thead-tr-th-thContainer">
-                              <p>Signups</p>
-                              <span class="table-thead-tr-th-thContainer-arrowUp"></span>
-                          </div>
-                      </th>
-                      <th class="table-thead-tr-th">
-                          <div class="table-thead-tr-th-thContainer">
-                              <p>FTD</p>
-                              <span class="table-thead-tr-th-thContainer-arrowUp"></span>
-                          </div>
-                      </th>
-                      <th class="table-thead-tr-th">
-                          <div class="table-thead-tr-th-thContainer">
-                              <p>Depositors</p>
-                              <span class="table-thead-tr-th-thContainer-arrowUp"></span>
-                          </div>
-                      </th>
-                      <th class="table-thead-tr-th">
-                          <div class="table-thead-tr-th-thContainer">
-                              <p>Deposits ($)</p>
-                              <span class="table-thead-tr-th-thContainer-arrowUp"></span>
-                          </div>
-                      </th>
-                      <th class="table-thead-tr-th">
-                          <div class="table-thead-tr-th-thContainer">
-                              <p>Payout ($)</p>
-                              <span class="table-thead-tr-th-thContainer-arrowUp"></span>
-                          </div>
-                      </th>
-                      <th class="table-thead-tr-th">
-                          <div class="table-thead-tr-th-thContainer">
-                              <p>Turnover</p>
-                              <span class="table-thead-tr-th-thContainer-arrowUp"></span>
-                          </div>
-                      </th>
-                      <th class="table-thead-tr-th">
-                          <div class="table-thead-tr-th-thContainer">
-                              <p>Deal</p>
-                              <span class="table-thead-tr-th-thContainer-arrowUp"></span>
-                          </div>
-                      </th>
-                  </tr>
-              </thead>
-              <tbody class="subpage__table-tbody table-tbody">
-                  <tr class="subpage__table-tbody-tr table-tbody-tr table-tbody-tr--sorted">
-                      <td class="subpage__table-tbody-tr-dt table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              aff/sam_test
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              17/08/02 (12:58)
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              232
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              114
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              12
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              6
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              3
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              34,425.00
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              234.00
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              421,342.00
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              cpl (200)
-                          </div>
-                      </td>
-                  </tr>
-                  <tr class="subpage__table-tbody-tr table-tbody-tr table-tbody-tr--sorted">
-                      <td class="subpage__table-tbody-tr-dt table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              aff/sam_test
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              17/08/02 (12:58)
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              232
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              114
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              12
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              6
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              3
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              34,425.00
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              234.00
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              421,342.00
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              cpl (200)
-                          </div>
-                      </td>
-                  </tr>
-                  <tr class="subpage__table-tbody-tr table-tbody-tr table-tbody-tr--sorted">
-                      <td class="subpage__table-tbody-tr-dt table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              aff/sam_test
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              17/08/02 (12:58)
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              232
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              114
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              12
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              6
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              3
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              34,425.00
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              234.00
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              421,342.00
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              cpl (200)
-                          </div>
-                      </td>
-                  </tr>
-                  <tr class="subpage__table-tbody-tr table-tbody-tr table-tbody-tr--sorted">
-                      <td class="subpage__table-tbody-tr-dt table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              aff/sam_test
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              17/08/02 (12:58)
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              232
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              114
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              12
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              6
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              3
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              34,425.00
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              234.00
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              421,342.00
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              cpl (200)
-                          </div>
-                      </td>
-                  </tr>
-                  <tr class="subpage__table-tbody-tr table-tbody-tr table-tbody-tr--sorted">
-                      <td class="subpage__table-tbody-tr-dt table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              aff/sam_test
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              17/08/02 (12:58)
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              232
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              114
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              12
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              6
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              3
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              34,425.00
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              234.00
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              421,342.00
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              cpl (200)
-                          </div>
-                      </td>
-                  </tr>
-                  <tr class="subpage__table-tbody-tr table-tbody-tr table-tbody-tr--sorted">
-                      <td class="subpage__table-tbody-tr-dt table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              aff/sam_test
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              17/08/02 (12:58)
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              232
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              114
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              12
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              6
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              3
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              34,425.00
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              234.00
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              421,342.00
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              cpl (200)
-                          </div>
-                      </td>
-                  </tr>
-                  <tr class="subpage__table-tbody-tr table-tbody-tr table-tbody-tr--sorted">
-                      <td class="subpage__table-tbody-tr-dt table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              aff/sam_test
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              17/08/02 (12:58)
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              232
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              114
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              12
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              6
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              3
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              34,425.00
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              234.00
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              421,342.00
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              cpl (200)
-                          </div>
-                      </td>
-                  </tr>
-                  <tr class="subpage__table-tbody-tr table-tbody-tr table-tbody-tr--sorted">
-                      <td class="subpage__table-tbody-tr-dt table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              aff/sam_test
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              17/08/02 (12:58)
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              232
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              114
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              12
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              6
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              3
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              34,425.00
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              234.00
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              421,342.00
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              cpl (200)
-                          </div>
-                      </td>
-                  </tr>
-                  <tr class="subpage__table-tbody-tr table-tbody-tr table-tbody-tr--sorted">
-                      <td class="subpage__table-tbody-tr-dt table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              aff/sam_test
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              17/08/02 (12:58)
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              232
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              114
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              12
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              6
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              3
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              34,425.00
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              234.00
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              421,342.00
-                          </div>
-                      </td>
-                      <td class="table-tbody-tr-td">
-                          <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                              cpl (200)
-                          </div>
-                      </td>
-                  </tr>
-              </tbody>
-          </table>
-        </div>
-          <div class="row">
-              <div class="subpage__paginationContainer">
-                  <div class="pagination">
-                      <svg version="1.1" id="Layer_1" class="svg-arrow-left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	                    viewBox="0 0 11 17" style="enable-background:new 0 0 11 17;" xml:space="preserve">
-                      <polygon points="9.3,16.9 0.9,8.5 9.3,0.1 10,0.9 2.4,8.5 10,16.1 "/>
-                      </svg>
-                      <a class="active" href="#">1</a>
-                      <a href="#">2</a>
-                      <a href="#">3</a>
-                      <a href="#">4</a>
-                      <a href="#">5</a>
-                      <a href="#">6</a>
-                      <a href="#">7</a>
-                      <a href="#">8</a>
-                      <a href="#">9</a>
-                      <svg version="1.1" id="Layer_1" class="svg-arrow-right" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 11 17" style="enable-background:new 0 0 11 17;" xml:space="preserve">
-                      <polygon points="1.6,16.9 0.9,16.1 8.6,8.5 0.9,0.9 1.6,0.1 10,8.5 "/>
-                      </svg>                  
-                  </div>
-              </div>
-          </div>  
-        </div>  
-      </section>
-      <section class="links general">
-        <div class="section-heading">
-          <h2 class="section-heading-title">Links</h2>
-        </div>
-        <div class="button-wrapper window">
-          <button class="btn-orange ">+ add new</button>
-        </div>
-        <div class="links-lists window">
-          <div class="links-lists-wrapper">
-            <ul class="links-list">
-              <li>
-                <div class="linked">
-                  <div class="linked-title-wrapper">
-                    <h2 class='linked-title'>Home page</h2>
-                  </div>
-                  <div class="linked-link">
-                    <a href="#" target="_blank" rel="nofollow noopener">https://www.homepage.com</a>
-                    <div class="svg_icons">
-                      <svg version="1.1" id="Layer_1" class="link_svg" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 10"
-                        style="enable-background:new 0 0 18 10;" xml:space="preserve">
-                        <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
-	C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z" />
-                      </svg>
-                      <svg version="1.1" id="Layer_1" class="trash_svg" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 16"
-                        style="enable-background:new 0 0 14 16;" xml:space="preserve">
-                        <path d="M11,15H3V6H2v10h10V6h-1V15z M0,4v1h14V4H0z M7,2c0.6,0,1,0.4,1,1h1c0-1.1-0.9-2-2-2S5,1.9,5,3h1C6,2.4,6.4,2,7,2z M8,6v8h1
-	V6H8z M5,6v8h1V6H5z" />
-                      </svg>
-                    </div>
-                  </div>
-
-                </div>
-              </li>
-              <li>
-                <div class="linked">
-                  <div class="linked-title-wrapper">
-                    <h2 class='linked-title'>Home page</h2>
-                  </div>
-                  <div class="linked-link">
-                    <a href="#" target="_blank" rel="nofollow noopener">https://www.homepage.com</a>
-                    <div class="svg_icons">
-                      <svg version="1.1" id="Layer_1" class="link_svg" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 10"
-                        style="enable-background:new 0 0 18 10;" xml:space="preserve">
-                        <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
-          C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z" />
-                      </svg>
-                      <svg version="1.1" id="Layer_1" class="trash_svg" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 16"
-                        style="enable-background:new 0 0 14 16;" xml:space="preserve">
-                        <path d="M11,15H3V6H2v10h10V6h-1V15z M0,4v1h14V4H0z M7,2c0.6,0,1,0.4,1,1h1c0-1.1-0.9-2-2-2S5,1.9,5,3h1C6,2.4,6.4,2,7,2z M8,6v8h1
-          V6H8z M5,6v8h1V6H5z" />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              <li>
-                <div class="linked">
-                  <div class="linked-title-wrapper">
-                    <h2 class='linked-title'>Home page</h2>
-                  </div>
-                  <div class="linked-link">
-                    <a href="#" target="_blank" rel="nofollow noopener">https://www.homepage.com</a>
-                    <div class="svg_icons">
-                      <svg version="1.1" id="Layer_1" class="link_svg" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 10"
-                        style="enable-background:new 0 0 18 10;" xml:space="preserve">
-                        <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
-          C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z" />
-                      </svg>
-                      <svg version="1.1" id="Layer_1" class="trash_svg" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 16"
-                        style="enable-background:new 0 0 14 16;" xml:space="preserve">
-                        <path d="M11,15H3V6H2v10h10V6h-1V15z M0,4v1h14V4H0z M7,2c0.6,0,1,0.4,1,1h1c0-1.1-0.9-2-2-2S5,1.9,5,3h1C6,2.4,6.4,2,7,2z M8,6v8h1
-          V6H8z M5,6v8h1V6H5z" />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="linked">
-                  <div class="linked-title-wrapper">
-                    <h2 class='linked-title'>Home page</h2>
-                  </div>
-                  <div class="linked-link">
-                    <a href="#" target="_blank" rel="nofollow noopener">https://www.homepage.com</a>
-                    <div class="svg_icons">
-                      <svg version="1.1" id="Layer_1" class="link_svg" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 10"
-                        style="enable-background:new 0 0 18 10;" xml:space="preserve">
-                        <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
-          C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z" />
-                      </svg>
-                      <svg version="1.1" id="Layer_1" class="trash_svg" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 16"
-                        style="enable-background:new 0 0 14 16;" xml:space="preserve">
-                        <path d="M11,15H3V6H2v10h10V6h-1V15z M0,4v1h14V4H0z M7,2c0.6,0,1,0.4,1,1h1c0-1.1-0.9-2-2-2S5,1.9,5,3h1C6,2.4,6.4,2,7,2z M8,6v8h1
-          V6H8z M5,6v8h1V6H5z" />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="linked">
-                  <div class="linked-title-wrapper">
-                    <h2 class='linked-title'>Home page</h2>
-                  </div>
-                  <div class="linked-link">
-                    <a href="#" target="_blank" rel="nofollow noopener">https://www.homepage.com</a>
-                    <div class="svg_icons">
-                      <svg version="1.1" id="Layer_1" class="link_svg" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 10"
-                        style="enable-background:new 0 0 18 10;" xml:space="preserve">
-                        <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
-          C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z" />
-                      </svg>
-                      <svg version="1.1" id="Layer_1" class="trash_svg" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 16"
-                        style="enable-background:new 0 0 14 16;" xml:space="preserve">
-                        <path d="M11,15H3V6H2v10h10V6h-1V15z M0,4v1h14V4H0z M7,2c0.6,0,1,0.4,1,1h1c0-1.1-0.9-2-2-2S5,1.9,5,3h1C6,2.4,6.4,2,7,2z M8,6v8h1
-          V6H8z M5,6v8h1V6H5z" />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="linked">
-                  <div class="linked-title-wrapper">
-                    <h2 class='linked-title'>Home page</h2>
-                  </div>
-                  <div class="linked-link">
-                    <a href="#" target="_blank" rel="nofollow noopener">https://www.homepage.com</a>
-                    <div class="svg_icons">
-                      <svg version="1.1" id="Layer_1" class="link_svg" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 10"
-                        style="enable-background:new 0 0 18 10;" xml:space="preserve">
-                        <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
-          C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z" />
-                      </svg>
-                      <svg version="1.1" id="Layer_1" class="trash_svg" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 16"
-                        style="enable-background:new 0 0 14 16;" xml:space="preserve">
-                        <path d="M11,15H3V6H2v10h10V6h-1V15z M0,4v1h14V4H0z M7,2c0.6,0,1,0.4,1,1h1c0-1.1-0.9-2-2-2S5,1.9,5,3h1C6,2.4,6.4,2,7,2z M8,6v8h1
-          V6H8z M5,6v8h1V6H5z" />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="linked">
-                  <div class="linked-title-wrapper">
-                    <h2 class='linked-title'>Home page</h2>
-                  </div>
-                  <div class="linked-link">
-                    <a href="#" target="_blank" rel="nofollow noopener">https://www.homepage.com</a>
-                    <div class="svg_icons">
-                      <svg version="1.1" id="Layer_1" class="link_svg" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 10"
-                        style="enable-background:new 0 0 18 10;" xml:space="preserve">
-                        <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
-          C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z" />
-                      </svg>
-                      <svg version="1.1" id="Layer_1" class="trash_svg" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 16"
-                        style="enable-background:new 0 0 14 16;" xml:space="preserve">
-                        <path d="M11,15H3V6H2v10h10V6h-1V15z M0,4v1h14V4H0z M7,2c0.6,0,1,0.4,1,1h1c0-1.1-0.9-2-2-2S5,1.9,5,3h1C6,2.4,6.4,2,7,2z M8,6v8h1
-          V6H8z M5,6v8h1V6H5z" />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="linked">
-                  <div class="linked-title-wrapper">
-                    <h2 class='linked-title'>Home page</h2>
-                  </div>
-                  <div class="linked-link">
-                    <a href="#" target="_blank" rel="nofollow noopener">https://www.homepage.com</a>
-                    <div class="svg_icons">
-                      <svg version="1.1" id="Layer_1" class="link_svg" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 10"
-                        style="enable-background:new 0 0 18 10;" xml:space="preserve">
-                        <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
-          C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z" />
-                      </svg>
-                      <svg version="1.1" id="Layer_1" class="trash_svg" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 16"
-                        style="enable-background:new 0 0 14 16;" xml:space="preserve">
-                        <path d="M11,15H3V6H2v10h10V6h-1V15z M0,4v1h14V4H0z M7,2c0.6,0,1,0.4,1,1h1c0-1.1-0.9-2-2-2S5,1.9,5,3h1C6,2.4,6.4,2,7,2z M8,6v8h1
-          V6H8z M5,6v8h1V6H5z" />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="linked">
-                  <div class="linked-title-wrapper">
-                    <h2 class='linked-title'>Home page</h2>
-                  </div>
-                  <div class="linked-link">
-                    <a href="#" target="_blank" rel="nofollow noopener">https://www.homepage.com</a>
-                    <div class="svg_icons">
-                      <svg version="1.1" id="Layer_1" class="link_svg" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 10"
-                        style="enable-background:new 0 0 18 10;" xml:space="preserve">
-                        <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
-          C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z" />
-                      </svg>
-                      <svg version="1.1" id="Layer_1" class="trash_svg" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 16"
-                        style="enable-background:new 0 0 14 16;" xml:space="preserve">
-                        <path d="M11,15H3V6H2v10h10V6h-1V15z M0,4v1h14V4H0z M7,2c0.6,0,1,0.4,1,1h1c0-1.1-0.9-2-2-2S5,1.9,5,3h1C6,2.4,6.4,2,7,2z M8,6v8h1
-          V6H8z M5,6v8h1V6H5z" />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="linked">
-                  <div class="linked-title-wrapper">
-                    <h2 class='linked-title'>Home page</h2>
-                  </div>
-                  <div class="linked-link">
-                    <a href="#" target="_blank" rel="nofollow noopener">https://www.homepage.com</a>
-                    <div class="svg_icons">
-                      <svg version="1.1" id="Layer_1" class="link_svg" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 10"
-                        style="enable-background:new 0 0 18 10;" xml:space="preserve">
-                        <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
-          C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z" />
-                      </svg>
-                      <svg version="1.1" id="Layer_1" class="trash_svg" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 16"
-                        style="enable-background:new 0 0 14 16;" xml:space="preserve">
-                        <path d="M11,15H3V6H2v10h10V6h-1V15z M0,4v1h14V4H0z M7,2c0.6,0,1,0.4,1,1h1c0-1.1-0.9-2-2-2S5,1.9,5,3h1C6,2.4,6.4,2,7,2z M8,6v8h1
-          V6H8z M5,6v8h1V6H5z" />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="linked">
-
-                </div>
-              </li>
-            </ul>
+            <h2 class="section-heading-title">Details</h2>
           </div>
-        </div>
-        <div class="button-wrapper">
-          <button class="btn-orange ">+ add new</button>
-        </div>
-      </section>
-      <section class="banners">
-        <div class="section-heading">
-          <h2 class="section-heading-title">Banners</h2>
-        </div>
-        <div class="button-wrapper">
-          <button class="btn-orange ">+ add new</button>
-        </div>
-        <div class="links-lists">
-          <div class="links-lists-wrapper">
-            <ul class="links-list">
-              <li>
-                <div class="linked">
-                  <div class="linked-title-wrapper">
-                    <h2 class="linked-title">Banner main</h2>
-                  </div>
-                  <div class="linked-link">
-                    <a href="#" target="_blank" rel="nofollow noopener">https://www.website.com/bannermain.gif</a>
-                    <div class="svg_icons">
-                      <svg version="1.1" id="Layer_1" class="link_svg" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 10"
-                        style="enable-background:new 0 0 18 10;" xml:space="preserve">
-                        <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
-      C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z" />
-                      </svg>
-                      <svg version="1.1" id="Layer_1" class="trash_svg" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 16"
-                        style="enable-background:new 0 0 14 16;" xml:space="preserve">
-                        <path d="M11,15H3V6H2v10h10V6h-1V15z M0,4v1h14V4H0z M7,2c0.6,0,1,0.4,1,1h1c0-1.1-0.9-2-2-2S5,1.9,5,3h1C6,2.4,6.4,2,7,2z M8,6v8h1
-      V6H8z M5,6v8h1V6H5z" />
-                      </svg>
-                    </div>
-                  </div>
-
-                </div>
-              </li>
-              <li>
-                <div class="linked">
-                  <div class="linked-title-wrapper">
-                    <h2 class="linked-title">Sign up banner</h2>
-                  </div>
-                  <div class="linked-link">
-                    <a href="#" target="_blank" rel="nofollow noopener">https://www.website.com/signup.gif</a>
-                    <div class="svg_icons">
-                      <svg version="1.1" id="Layer_1" class="link_svg" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 10"
-                        style="enable-background:new 0 0 18 10;" xml:space="preserve">
-                        <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
-              C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z" />
-                      </svg>
-                      <svg version="1.1" id="Layer_1" class="trash_svg" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 16"
-                        style="enable-background:new 0 0 14 16;" xml:space="preserve">
-                        <path d="M11,15H3V6H2v10h10V6h-1V15z M0,4v1h14V4H0z M7,2c0.6,0,1,0.4,1,1h1c0-1.1-0.9-2-2-2S5,1.9,5,3h1C6,2.4,6.4,2,7,2z M8,6v8h1
-              V6H8z M5,6v8h1V6H5z" />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              <li>
-                <div class="linked">
-                  <div class="linked-title-wrapper">
-                    <h2 class="linked-title">Banner left side</h2>
-                  </div>
-                  <div class="linked-link">
-                    <a href="#" target="_blank" rel="nofollow noopener">https://www.website.com/leftside.gif</a>
-                    <div class="svg_icons">
-                      <svg version="1.1" id="Layer_1" class="link_svg" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 10"
-                        style="enable-background:new 0 0 18 10;" xml:space="preserve">
-                        <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
-              C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z" />
-                      </svg>
-                      <svg version="1.1" id="Layer_1" class="trash_svg" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 16"
-                        style="enable-background:new 0 0 14 16;" xml:space="preserve">
-                        <path d="M11,15H3V6H2v10h10V6h-1V15z M0,4v1h14V4H0z M7,2c0.6,0,1,0.4,1,1h1c0-1.1-0.9-2-2-2S5,1.9,5,3h1C6,2.4,6.4,2,7,2z M8,6v8h1
-              V6H8z M5,6v8h1V6H5z" />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="linked">
-                  <div class="linked-title-wrapper">
-                    <h2 class="linked-title">Vertical banner</h2>
-                  </div>
-                  <div class="linked-link">
-                    <a href="#" target="_blank" rel="nofollow noopener">https://www.website.com/ver.gif</a>
-                    <div class="svg_icons">
-                      <svg version="1.1" id="Layer_1" class="link_svg" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 10"
-                        style="enable-background:new 0 0 18 10;" xml:space="preserve">
-                        <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
-              C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z" />
-                      </svg>
-                      <svg version="1.1" id="Layer_1" class="trash_svg" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 16"
-                        style="enable-background:new 0 0 14 16;" xml:space="preserve">
-                        <path d="M11,15H3V6H2v10h10V6h-1V15z M0,4v1h14V4H0z M7,2c0.6,0,1,0.4,1,1h1c0-1.1-0.9-2-2-2S5,1.9,5,3h1C6,2.4,6.4,2,7,2z M8,6v8h1
-              V6H8z M5,6v8h1V6H5z" />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="linked">
-                  <div class="linked-title-wrapper">
-                    <h2 class="linked-title">Front banner</h2>
-                  </div>
-                  <div class="linked-link">
-                    <a href="#" target="_blank" rel="nofollow noopener">https://www.website.com/front.gif</a>
-                    <div class="svg_icons">
-                      <svg version="1.1" id="Layer_1" class="link_svg" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 10"
-                        style="enable-background:new 0 0 18 10;" xml:space="preserve">
-                        <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
-              C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z" />
-                      </svg>
-                      <svg version="1.1" id="Layer_1" class="trash_svg" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 16"
-                        style="enable-background:new 0 0 14 16;" xml:space="preserve">
-                        <path d="M11,15H3V6H2v10h10V6h-1V15z M0,4v1h14V4H0z M7,2c0.6,0,1,0.4,1,1h1c0-1.1-0.9-2-2-2S5,1.9,5,3h1C6,2.4,6.4,2,7,2z M8,6v8h1
-              V6H8z M5,6v8h1V6H5z" />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="linked">
-                  <div class="linked-title-wrapper">
-                    <h2 class="linked-title">Horizontal banner</h2>
-                  </div>
-                  <div class="linked-link">
-                    <a href="#" target="_blank" rel="nofollow noopener">https://www.website.com/horizontal.gif</a>
-                    <div class="svg_icons">
-                      <svg version="1.1" id="Layer_1" class="link_svg" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 10"
-                        style="enable-background:new 0 0 18 10;" xml:space="preserve">
-                        <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
-              C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z" />
-                      </svg>
-                      <svg version="1.1" id="Layer_1" class="trash_svg" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 16"
-                        style="enable-background:new 0 0 14 16;" xml:space="preserve">
-                        <path d="M11,15H3V6H2v10h10V6h-1V15z M0,4v1h14V4H0z M7,2c0.6,0,1,0.4,1,1h1c0-1.1-0.9-2-2-2S5,1.9,5,3h1C6,2.4,6.4,2,7,2z M8,6v8h1
-              V6H8z M5,6v8h1V6H5z" />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="linked">
-
-                </div>
-              </li>
-            </ul>
+          <div class="subsection-dates dates">
+            <div class="dates-modules">
+              <input
+                type="date"
+                class="date"
+                name="trip-start"
+                value="2018-07-22"
+                min="2018-01-01"
+                max="2018-12-31"
+              />
+              <input
+                type="date"
+                class="date"
+                name="trip-start"
+                value="2018-07-22"
+                min="2018-01-01"
+                max="2018-12-31"
+              />
+            </div>
+            <button class="btn-orange date-button">
+              <i class="fas fa-sync-alt refresh-icon"></i>
+            </button>
           </div>
-        </div>
-        <div class="button-wrapper">
-          <button class="btn-orange ">+ add new</button>
-        </div>
-      </section>
-      <section class="personal-data">
-        <div class="section-heading">
-          <h2 class="section-heading-title">Personal data</h2>
-        </div>
-        <div class="personal-data-wrapper">
-          <form action="" method="POST">
-            <div class="form-row-container">
-              <div class="form-row first-row">
-                <div class="field">
-                  <label>Name*</label>
-                  <input type="text" name="name" placeholder="John" required="true">
-                </div>
-                <div class="field">
-                  <label>Surname*</label>
-                  <input type="text" name="surname" placeholder="Smith" required="true">
-                </div>
-                <div class="field">
-                  <label>E-mail*</label>
-                  <input type="email" name="email" placeholder="abc@email.com" required="true">
-                </div>
-                <div class="field">
-                  <label>Phone number*</label>
-                  <input type="text" name="number" placeholder="123456000" required="true">
-                </div>
-              </div>
-            </div>
-            <div class="form-row-container">
-
-              <div class="form-row second-row">
-                <div class="field">
-                  <label>Skype</label>
-                  <input type="text" name="skype">
-                </div>
-                <div class="field">
-                  <label>ICQ</label>
-                  <input type="text" name="icq">
-                </div>
-                <div class="field">
-                  <label>Msn</label>
-                  <input type="text" name="msn">
-                </div>
-              </div>
-            </div>
-
-            <div class="form-row-container">
-
-              <div class="form-row third-row">
-                <div class="field">
-                  <label>Wallet</label>
-                  <input type="text" name="wallet">
-                </div>
-              </div>
-            </div>
-            <div class="form-row-container">
-
-              <div class="form-row fourth-row">
-                <div class="field">
-                  <label>Password*</label>
-                  <input type="password" name="password" required="true">
-                </div>
-                <div class="field">
-                  <label>Repeat*</label>
-                  <input type="password" name="repeat" required="true">
-                </div>
-              </div>
-            </div>
-            <div class="btn-wrapper">
-              <button type="submit" class="btn-orange">Save</button>
-            </div>
-          </form>
-        </div>
-
-      </section>
-      <section class="table payout active">
-          <div class="section-heading">
-              <h2 class="section-heading-title">Payout history</h2>
-            </div>
-            <div class="subsection-dates dates">
-                <div class="dates-modules">
-                  <input type="date" class="date" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31" />
-                  <input type="date" class="date" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31" />
-                </div>
-                <button class="btn-orange date-button">
-                  <svg version="1.1" class="icon-refresh" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 17"
-                    style="enable-background:new 0 0 16 17;" xml:space="preserve">
-                    <path d="M11,6h5V1h-1v3.3l-1.2-1.1c-2.9-2.9-7.7-2.9-10.6,0c-2.9,2.9-2.9,7.7,0,10.6C4.7,15.3,6.6,16,8.5,16s3.8-0.7,5.3-2.2
-                      l-0.7-0.7c-2.5,2.5-6.7,2.5-9.2,0c-2.5-2.5-2.5-6.7,0-9.2c2.5-2.5,6.7-2.5,9.2,0L14.2,5H11V6z" />
-                  </svg>
-                </button>
-              </div>
           <div class="table__wrapper">
             <div class="table__inner">
               <table class="subpage__table table">
-                  <thead class="subpage__table-thead table-thead">
-                      <tr class="table-thead-tr">
-                          <th class="table-thead-tr-th">
-                              <div class="table-thead-tr-th-thContainer">
-                                  <p>Date</p>
-                                  <span class="table-thead-tr-th-thContainer-arrowUp"></span>
-                              </div>
-                          </th>
-                          <th class="table-thead-tr-th">
-                              <div class="table-thead-tr-th-thContainer">
-                                  <p>Amount ($)</p>
-                                  <span class="table-thead-tr-th-thContainer-arrowUp"></span>
-                              </div>
-                          </th>
-                          <th class="table-thead-tr-th">
-                              <div class="table-thead-tr-th-thContainer">
-                                  <p>Deal</p>
-                                  <span class="table-thead-tr-th-thContainer-arrowUp"></span>
-                              </div>
-                          </th>
-                          <th class="table-thead-tr-th">
-                              <div class="table-thead-tr-th-thContainer">
-                                  <p>Account</p>
-                                  <span class="table-thead-tr-th-thContainer-arrowUp"></span>
-                              </div>
-                          </th>
-                      </tr>
-                  </thead>
-                  <tbody class="subpage__table-tbody table-tbody">
-                      <tr class="subpage__table-tbody-tr table-tbody-tr table-tbody-tr--sorted">
-                          <td class="subpage__table-tbody-tr-dt table-tbody-tr-td">
-                              <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                                  17/08/02 (12:58)
-                              </div>
-                          </td>
-                          <td class="table-tbody-tr-td">
-                              <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                                  34,425.00
-                              </div>
-                          </td>
-                          <td class="table-tbody-tr-td">
-                              <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                                  cpl (200)
-                              </div>
-                          </td>
-                          <td class="table-tbody-tr-td">
-                              <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                                  bank
-                              </div>
-                          </td>
-                      </tr>
-                      <tr class="subpage__table-tbody-tr table-tbody-tr table-tbody-tr--sorted">
-                          <td class="subpage__table-tbody-tr-dt table-tbody-tr-td">
-                              <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                                  17/08/02 (12:58)
-                              </div>
-                          </td>
-                          <td class="table-tbody-tr-td">
-                              <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                                  34,425.00
-                              </div>
-                          </td>
-                          <td class="table-tbody-tr-td">
-                              <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                                  cpl (200)
-                              </div>
-                          </td>
-                          <td class="table-tbody-tr-td">
-                              <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                                  bank
-                              </div>
-                          </td>
-                      </tr>
-                      <tr class="subpage__table-tbody-tr table-tbody-tr table-tbody-tr--sorted">
-                          <td class="subpage__table-tbody-tr-dt table-tbody-tr-td">
-                              <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                                  17/08/02 (12:58)
-                              </div>
-                          </td>
-                          <td class="table-tbody-tr-td">
-                              <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                                  34,425.00
-                              </div>
-                          </td>
-                          <td class="table-tbody-tr-td">
-                              <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                                  cpl (200)
-                              </div>
-                          </td>
-                          <td class="table-tbody-tr-td">
-                              <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                                  bank
-                              </div>
-                          </td>
-                      </tr>
-                      <tr class="subpage__table-tbody-tr table-tbody-tr table-tbody-tr--sorted">
-                          <td class="subpage__table-tbody-tr-dt table-tbody-tr-td">
-                              <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                                  17/08/02 (12:58)
-                              </div>
-                          </td>
-                          <td class="table-tbody-tr-td">
-                              <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                                  34,425.00
-                              </div>
-                          </td>
-                          <td class="table-tbody-tr-td">
-                              <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                                  cpl (200)
-                              </div>
-                          </td>
-                          <td class="table-tbody-tr-td">
-                              <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                                  bank
-                              </div>
-                          </td>
-                      </tr>
-                      <tr class="subpage__table-tbody-tr table-tbody-tr table-tbody-tr--sorted">
-                          <td class="subpage__table-tbody-tr-dt table-tbody-tr-td">
-                              <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                                  17/08/02 (12:58)
-                              </div>
-                          </td>
-                          <td class="table-tbody-tr-td">
-                              <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                                  34,425.00
-                              </div>
-                          </td>
-                          <td class="table-tbody-tr-td">
-                              <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                                  cpl (200)
-                              </div>
-                          </td>
-                          <td class="table-tbody-tr-td">
-                              <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                                  bank
-                              </div>
-                          </td>
-                      </tr>
-                      <tr class="subpage__table-tbody-tr table-tbody-tr table-tbody-tr--sorted">
-                          <td class="subpage__table-tbody-tr-dt table-tbody-tr-td">
-                              <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                                  17/08/02 (12:58)
-                              </div>
-                          </td>
-                          <td class="table-tbody-tr-td">
-                              <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                                  34,425.00
-                              </div>
-                          </td>
-                          <td class="table-tbody-tr-td">
-                              <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                                  cpl (200)
-                              </div>
-                          </td>
-                          <td class="table-tbody-tr-td">
-                              <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                                  bank
-                              </div>
-                          </td>
-                      </tr>
-                      <tr class="subpage__table-tbody-tr table-tbody-tr table-tbody-tr--sorted">
-                          <td class="subpage__table-tbody-tr-dt table-tbody-tr-td">
-                              <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                                  17/08/02 (12:58)
-                              </div>
-                          </td>
-                          <td class="table-tbody-tr-td">
-                              <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                                  34,425.00
-                              </div>
-                          </td>
-                          <td class="table-tbody-tr-td">
-                              <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                                  cpl (200)
-                              </div>
-                          </td>
-                          <td class="table-tbody-tr-td">
-                              <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                                  bank
-                              </div>
-                          </td>
-                      </tr>
-                      <tr class="subpage__table-tbody-tr table-tbody-tr table-tbody-tr--sorted">
-                          <td class="subpage__table-tbody-tr-dt table-tbody-tr-td">
-                              <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                                  17/08/02 (12:58)
-                              </div>
-                          </td>
-                          <td class="table-tbody-tr-td">
-                              <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                                  34,425.00
-                              </div>
-                          </td>
-                          <td class="table-tbody-tr-td">
-                              <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                                  cpl (200)
-                              </div>
-                          </td>
-                          <td class="table-tbody-tr-td">
-                              <div class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer">
-                                  bank
-                              </div>
-                          </td>
-                      </tr>
-                  </tbody>
+                <thead class="subpage__table-thead table-thead">
+                  <tr class="table-thead-tr">
+                    <th class="table-thead-tr-th">
+                      <div class="table-thead-tr-th-thContainer">
+                        <p>Tracker name</p>
+                      </div>
+                    </th>
+                    <th class="table-thead-tr-th">
+                      <div class="table-thead-tr-th-thContainer">
+                        <p>Initiated date</p>
+                        <span
+                          class="table-thead-tr-th-thContainer-arrowUp"
+                        ></span>
+                      </div>
+                    </th>
+                    <th class="table-thead-tr-th">
+                      <div class="table-thead-tr-th-thContainer">
+                        <p>Visits</p>
+                        <span
+                          class="table-thead-tr-th-thContainer-arrowUp"
+                        ></span>
+                      </div>
+                    </th>
+                    <th class="table-thead-tr-th">
+                      <div class="table-thead-tr-th-thContainer">
+                        <p>Unique</p>
+                        <span
+                          class="table-thead-tr-th-thContainer-arrowUp"
+                        ></span>
+                      </div>
+                    </th>
+                    <th class="table-thead-tr-th">
+                      <div class="table-thead-tr-th-thContainer">
+                        <p>Signups</p>
+                        <span
+                          class="table-thead-tr-th-thContainer-arrowUp"
+                        ></span>
+                      </div>
+                    </th>
+                    <th class="table-thead-tr-th">
+                      <div class="table-thead-tr-th-thContainer">
+                        <p>FTD</p>
+                        <span
+                          class="table-thead-tr-th-thContainer-arrowUp"
+                        ></span>
+                      </div>
+                    </th>
+                    <th class="table-thead-tr-th">
+                      <div class="table-thead-tr-th-thContainer">
+                        <p>Depositors</p>
+                        <span
+                          class="table-thead-tr-th-thContainer-arrowUp"
+                        ></span>
+                      </div>
+                    </th>
+                    <th class="table-thead-tr-th">
+                      <div class="table-thead-tr-th-thContainer">
+                        <p>Deposits ($)</p>
+                        <span
+                          class="table-thead-tr-th-thContainer-arrowUp"
+                        ></span>
+                      </div>
+                    </th>
+                    <th class="table-thead-tr-th">
+                      <div class="table-thead-tr-th-thContainer">
+                        <p>Payout ($)</p>
+                        <span
+                          class="table-thead-tr-th-thContainer-arrowUp"
+                        ></span>
+                      </div>
+                    </th>
+                    <th class="table-thead-tr-th">
+                      <div class="table-thead-tr-th-thContainer">
+                        <p>Turnover</p>
+                        <span
+                          class="table-thead-tr-th-thContainer-arrowUp"
+                        ></span>
+                      </div>
+                    </th>
+                    <th class="table-thead-tr-th">
+                      <div class="table-thead-tr-th-thContainer">
+                        <p>Deal</p>
+                        <span
+                          class="table-thead-tr-th-thContainer-arrowUp"
+                        ></span>
+                      </div>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody class="subpage__table-tbody table-tbody">
+                  <tr
+                    class="subpage__table-tbody-tr table-tbody-tr table-tbody-tr--sorted"
+                  >
+                    <td class="subpage__table-tbody-tr-dt table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        aff/sam_test
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        17/08/02 (12:58)
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        232
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        114
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        12
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        6
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        3
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        34,425.00
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        234.00
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        421,342.00
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        cpl (200)
+                      </div>
+                    </td>
+                  </tr>
+                  <tr
+                    class="subpage__table-tbody-tr table-tbody-tr table-tbody-tr--sorted"
+                  >
+                    <td class="subpage__table-tbody-tr-dt table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        aff/sam_test
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        17/08/02 (12:58)
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        232
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        114
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        12
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        6
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        3
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        34,425.00
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        234.00
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        421,342.00
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        cpl (200)
+                      </div>
+                    </td>
+                  </tr>
+                  <tr
+                    class="subpage__table-tbody-tr table-tbody-tr table-tbody-tr--sorted"
+                  >
+                    <td class="subpage__table-tbody-tr-dt table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        aff/sam_test
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        17/08/02 (12:58)
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        232
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        114
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        12
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        6
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        3
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        34,425.00
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        234.00
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        421,342.00
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        cpl (200)
+                      </div>
+                    </td>
+                  </tr>
+                  <tr
+                    class="subpage__table-tbody-tr table-tbody-tr table-tbody-tr--sorted"
+                  >
+                    <td class="subpage__table-tbody-tr-dt table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        aff/sam_test
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        17/08/02 (12:58)
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        232
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        114
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        12
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        6
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        3
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        34,425.00
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        234.00
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        421,342.00
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        cpl (200)
+                      </div>
+                    </td>
+                  </tr>
+                  <tr
+                    class="subpage__table-tbody-tr table-tbody-tr table-tbody-tr--sorted"
+                  >
+                    <td class="subpage__table-tbody-tr-dt table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        aff/sam_test
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        17/08/02 (12:58)
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        232
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        114
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        12
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        6
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        3
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        34,425.00
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        234.00
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        421,342.00
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        cpl (200)
+                      </div>
+                    </td>
+                  </tr>
+                  <tr
+                    class="subpage__table-tbody-tr table-tbody-tr table-tbody-tr--sorted"
+                  >
+                    <td class="subpage__table-tbody-tr-dt table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        aff/sam_test
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        17/08/02 (12:58)
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        232
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        114
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        12
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        6
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        3
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        34,425.00
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        234.00
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        421,342.00
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        cpl (200)
+                      </div>
+                    </td>
+                  </tr>
+                  <tr
+                    class="subpage__table-tbody-tr table-tbody-tr table-tbody-tr--sorted"
+                  >
+                    <td class="subpage__table-tbody-tr-dt table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        aff/sam_test
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        17/08/02 (12:58)
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        232
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        114
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        12
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        6
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        3
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        34,425.00
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        234.00
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        421,342.00
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        cpl (200)
+                      </div>
+                    </td>
+                  </tr>
+                  <tr
+                    class="subpage__table-tbody-tr table-tbody-tr table-tbody-tr--sorted"
+                  >
+                    <td class="subpage__table-tbody-tr-dt table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        aff/sam_test
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        17/08/02 (12:58)
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        232
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        114
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        12
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        6
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        3
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        34,425.00
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        234.00
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        421,342.00
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        cpl (200)
+                      </div>
+                    </td>
+                  </tr>
+                  <tr
+                    class="subpage__table-tbody-tr table-tbody-tr table-tbody-tr--sorted"
+                  >
+                    <td class="subpage__table-tbody-tr-dt table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        aff/sam_test
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        17/08/02 (12:58)
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        232
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        114
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        12
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        6
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        3
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        34,425.00
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        234.00
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        421,342.00
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        cpl (200)
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
               </table>
             </div>
             <div class="row">
-                <div class="subpage__paginationContainer">
-                    <div class="pagination">
-                        <svg version="1.1" id="Layer_1" class="svg-arrow-left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        viewBox="0 0 11 17" style="enable-background:new 0 0 11 17;" xml:space="preserve">
-                        <polygon points="9.3,16.9 0.9,8.5 9.3,0.1 10,0.9 2.4,8.5 10,16.1 "/>
-                        </svg>
-                        <a class="active" href="#">1</a>
-                        <a href="#">2</a>
-                        <a href="#">3</a>
-                        <a href="#">4</a>
-                        <a href="#">5</a>
-                        <a href="#">6</a>
-                        <a href="#">7</a>
-                        <a href="#">8</a>
-                        <a href="#">9</a>
-                        <svg version="1.1" id="Layer_1" class="svg-arrow-right" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        viewBox="0 0 11 17" style="enable-background:new 0 0 11 17;" xml:space="preserve">
-                        <polygon points="1.6,16.9 0.9,16.1 8.6,8.5 0.9,0.9 1.6,0.1 10,8.5 "/>
-                        </svg>                  
-                    </div>
+              <div class="subpage__paginationContainer">
+                <div class="pagination">
+                  <i class="fas fa-arrow-left"></i>
+                  <a class="active" href="#">1</a>
+                  <a href="#">2</a>
+                  <a href="#">3</a>
+                  <a href="#">4</a>
+                  <a href="#">5</a>
+                  <a href="#">6</a>
+                  <a href="#">7</a>
+                  <a href="#">8</a>
+                  <a href="#">9</a>
+                  <i class="fas fa-arrow-right"></i>
                 </div>
-            </div>  
+              </div>
+            </div>
           </div>
-      </section>
-    </div>
-    <div class="overlay" id="overlay">
-      <div class="modal modal-chat" id="manager">
-        <div class="btn-close js--close-modal">x</div>
+        </section>
+        <section class="links general">
           <div class="section-heading">
-            <h2 class="section-heading-title">Online chat with Your personal manager</h2>
+            <h2 class="section-heading-title">Links</h2>
+          </div>
+          <div class="button-wrapper window">
+            <button class="btn-orange ">+ add new</button>
+          </div>
+          <div class="links-lists window">
+            <div class="links-lists-wrapper">
+              <ul class="links-list">
+                <li>
+                  <div class="linked">
+                    <div class="linked-title-wrapper">
+                      <h2 class="linked-title">Home page</h2>
+                    </div>
+                    <div class="linked-link">
+                      <a href="#" target="_blank" rel="nofollow noopener"
+                        >https://www.homepage.com</a
+                      >
+                      <div class="link_icons">
+                        <i class="fas fa-link link-icon"></i>
+                        <i class="fas fa-trash trash-icon"></i>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="linked">
+                    <div class="linked-title-wrapper">
+                      <h2 class="linked-title">Home page</h2>
+                    </div>
+                    <div class="linked-link">
+                      <a href="#" target="_blank" rel="nofollow noopener"
+                        >https://www.homepage.com</a
+                      >
+                      <div class="link_icons">
+                        <i class="fas fa-link link-icon"></i>
+                        <i class="fas fa-trash trash-icon"></i>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="linked">
+                    <div class="linked-title-wrapper">
+                      <h2 class="linked-title">Home page</h2>
+                    </div>
+                    <div class="linked-link">
+                      <a href="#" target="_blank" rel="nofollow noopener"
+                        >https://www.homepage.com</a
+                      >
+                      <div class="link_icons">
+                        <i class="fas fa-link link-icon"></i>
+                        <i class="fas fa-trash trash-icon"></i>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="linked">
+                    <div class="linked-title-wrapper">
+                      <h2 class="linked-title">Home page</h2>
+                    </div>
+                    <div class="linked-link">
+                      <a href="#" target="_blank" rel="nofollow noopener"
+                        >https://www.homepage.com</a
+                      >
+                      <div class="link_icons">
+                        <i class="fas fa-link link-icon"></i>
+                        <i class="fas fa-trash trash-icon"></i>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="linked">
+                    <div class="linked-title-wrapper">
+                      <h2 class="linked-title">Home page</h2>
+                    </div>
+                    <div class="linked-link">
+                      <a href="#" target="_blank" rel="nofollow noopener"
+                        >https://www.homepage.com</a
+                      >
+                      <div class="link_icons">
+                        <i class="fas fa-link link-icon"></i>
+                        <i class="fas fa-trash trash-icon"></i>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="linked">
+                    <div class="linked-title-wrapper">
+                      <h2 class="linked-title">Home page</h2>
+                    </div>
+                    <div class="linked-link">
+                      <a href="#" target="_blank" rel="nofollow noopener"
+                        >https://www.homepage.com</a
+                      >
+                      <div class="link_icons">
+                        <i class="fas fa-link link-icon"></i>
+                        <i class="fas fa-trash trash-icon"></i>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="linked">
+                    <div class="linked-title-wrapper">
+                      <h2 class="linked-title">Home page</h2>
+                    </div>
+                    <div class="linked-link">
+                      <a href="#" target="_blank" rel="nofollow noopener"
+                        >https://www.homepage.com</a
+                      >
+                      <div class="link_icons">
+                        <i class="fas fa-link link-icon"></i>
+                        <i class="fas fa-trash trash-icon"></i>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="linked">
+                    <div class="linked-title-wrapper">
+                      <h2 class="linked-title">Home page</h2>
+                    </div>
+                    <div class="linked-link">
+                      <a href="#" target="_blank" rel="nofollow noopener"
+                        >https://www.homepage.com</a
+                      >
+                      <div class="link_icons">
+                        <i class="fas fa-link link-icon"></i>
+                        <i class="fas fa-trash trash-icon"></i>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="linked">
+                    <div class="linked-title-wrapper">
+                      <h2 class="linked-title">Home page</h2>
+                    </div>
+                    <div class="linked-link">
+                      <a href="#" target="_blank" rel="nofollow noopener"
+                        >https://www.homepage.com</a
+                      >
+                      <div class="link_icons">
+                        <i class="fas fa-link link-icon"></i>
+                        <i class="fas fa-trash trash-icon"></i>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="linked">
+                    <div class="linked-title-wrapper">
+                      <h2 class="linked-title">Home page</h2>
+                    </div>
+                    <div class="linked-link">
+                      <a href="#" target="_blank" rel="nofollow noopener"
+                        >https://www.homepage.com</a
+                      >
+                      <div class="link_icons">
+                        <i class="fas fa-link link-icon"></i>
+                        <i class="fas fa-trash trash-icon"></i>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="linked"></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="button-wrapper">
+            <button class="btn-orange ">+ add new</button>
+          </div>
+        </section>
+        <section class="banners">
+          <div class="section-heading">
+            <h2 class="section-heading-title">Banners</h2>
+          </div>
+          <div class="button-wrapper">
+            <button class="btn-orange ">+ add new</button>
+          </div>
+          <div class="links-lists">
+            <div class="links-lists-wrapper">
+              <ul class="links-list">
+                <li>
+                  <div class="linked">
+                    <div class="linked-title-wrapper">
+                      <h2 class="linked-title">Banner main</h2>
+                    </div>
+                    <div class="linked-link">
+                      <a href="#" target="_blank" rel="nofollow noopener"
+                        >https://www.website.com/bannermain.gif</a
+                      >
+                      <div class="link_icons">
+                        <i class="fas fa-link link-icon"></i>
+                        <i class="fas fa-trash trash-icon"></i>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="linked">
+                    <div class="linked-title-wrapper">
+                      <h2 class="linked-title">Sign up banner</h2>
+                    </div>
+                    <div class="linked-link">
+                      <a href="#" target="_blank" rel="nofollow noopener"
+                        >https://www.website.com/signup.gif</a
+                      >
+                      <div class="link_icons">
+                        <i class="fas fa-link link-icon"></i>
+                        <i class="fas fa-trash trash-icon"></i>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="linked">
+                    <div class="linked-title-wrapper">
+                      <h2 class="linked-title">Banner left side</h2>
+                    </div>
+                    <div class="linked-link">
+                      <a href="#" target="_blank" rel="nofollow noopener"
+                        >https://www.website.com/leftside.gif</a
+                      >
+                      <div class="link_icons">
+                        <i class="fas fa-link link-icon"></i>
+                        <i class="fas fa-trash trash-icon"></i>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="linked">
+                    <div class="linked-title-wrapper">
+                      <h2 class="linked-title">Vertical banner</h2>
+                    </div>
+                    <div class="linked-link">
+                      <a href="#" target="_blank" rel="nofollow noopener"
+                        >https://www.website.com/ver.gif</a
+                      >
+                      <div class="link_icons">
+                        <i class="fas fa-link link-icon"></i>
+                        <i class="fas fa-trash trash-icon"></i>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="linked">
+                    <div class="linked-title-wrapper">
+                      <h2 class="linked-title">Front banner</h2>
+                    </div>
+                    <div class="linked-link">
+                      <a href="#" target="_blank" rel="nofollow noopener"
+                        >https://www.website.com/front.gif</a
+                      >
+                      <div class="link_icons">
+                        <i class="fas fa-link link-icon"></i>
+                        <i class="fas fa-trash trash-icon"></i>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="linked">
+                    <div class="linked-title-wrapper">
+                      <h2 class="linked-title">Horizontal banner</h2>
+                    </div>
+                    <div class="linked-link">
+                      <a href="#" target="_blank" rel="nofollow noopener"
+                        >https://www.website.com/horizontal.gif</a
+                      >
+                      <div class="link_icons">
+                        <i class="fas fa-link link-icon"></i>
+                        <i class="fas fa-trash trash-icon"></i>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="linked"></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="button-wrapper">
+            <button class="btn-orange ">+ add new</button>
+          </div>
+        </section>
+        <section class="personal-data">
+          <div class="section-heading">
+            <h2 class="section-heading-title">Personal data</h2>
+          </div>
+          <div class="personal-data-wrapper">
+            <form action="" method="POST">
+              <div class="form-row-container">
+                <div class="form-row first-row">
+                  <div class="field">
+                    <label>Name*</label>
+                    <input
+                      type="text"
+                      name="name"
+                      placeholder="John"
+                      required="true"
+                    />
+                  </div>
+                  <div class="field">
+                    <label>Surname*</label>
+                    <input
+                      type="text"
+                      name="surname"
+                      placeholder="Smith"
+                      required="true"
+                    />
+                  </div>
+                  <div class="field">
+                    <label>E-mail*</label>
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="abc@email.com"
+                      required="true"
+                    />
+                  </div>
+                  <div class="field">
+                    <label>Phone number*</label>
+                    <input
+                      type="text"
+                      name="number"
+                      placeholder="123456000"
+                      required="true"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="form-row-container">
+                <div class="form-row second-row">
+                  <div class="field">
+                    <label>Skype</label>
+                    <input type="text" name="skype" />
+                  </div>
+                  <div class="field">
+                    <label>ICQ</label>
+                    <input type="text" name="icq" />
+                  </div>
+                  <div class="field">
+                    <label>Msn</label>
+                    <input type="text" name="msn" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-row-container">
+                <div class="form-row third-row">
+                  <div class="field">
+                    <label>Wallet</label>
+                    <input type="text" name="wallet" />
+                  </div>
+                </div>
+              </div>
+              <div class="form-row-container">
+                <div class="form-row fourth-row">
+                  <div class="field">
+                    <label>Password*</label>
+                    <input type="password" name="password" required="true" />
+                  </div>
+                  <div class="field">
+                    <label>Repeat*</label>
+                    <input type="password" name="repeat" required="true" />
+                  </div>
+                </div>
+              </div>
+              <div class="btn-wrapper">
+                <button type="submit" class="btn-orange">Save</button>
+              </div>
+            </form>
+          </div>
+        </section>
+        <section class="table payout active">
+          <div class="section-heading">
+            <h2 class="section-heading-title">Payout history</h2>
+          </div>
+          <div class="subsection-dates dates">
+            <div class="dates-modules">
+              <input
+                type="date"
+                class="date"
+                name="trip-start"
+                value="2018-07-22"
+                min="2018-01-01"
+                max="2018-12-31"
+              />
+              <input
+                type="date"
+                class="date"
+                name="trip-start"
+                value="2018-07-22"
+                min="2018-01-01"
+                max="2018-12-31"
+              />
+            </div>
+            <button class="btn-orange date-button">
+              <i class="fas fa-sync-alt refresh-icon"></i>
+            </button>
+          </div>
+          <div class="table__wrapper">
+            <div class="table__inner">
+              <table class="subpage__table table">
+                <thead class="subpage__table-thead table-thead">
+                  <tr class="table-thead-tr">
+                    <th class="table-thead-tr-th">
+                      <div class="table-thead-tr-th-thContainer">
+                        <p>Date</p>
+                        <span
+                          class="table-thead-tr-th-thContainer-arrowUp"
+                        ></span>
+                      </div>
+                    </th>
+                    <th class="table-thead-tr-th">
+                      <div class="table-thead-tr-th-thContainer">
+                        <p>Amount ($)</p>
+                        <span
+                          class="table-thead-tr-th-thContainer-arrowUp"
+                        ></span>
+                      </div>
+                    </th>
+                    <th class="table-thead-tr-th">
+                      <div class="table-thead-tr-th-thContainer">
+                        <p>Deal</p>
+                        <span
+                          class="table-thead-tr-th-thContainer-arrowUp"
+                        ></span>
+                      </div>
+                    </th>
+                    <th class="table-thead-tr-th">
+                      <div class="table-thead-tr-th-thContainer">
+                        <p>Account</p>
+                        <span
+                          class="table-thead-tr-th-thContainer-arrowUp"
+                        ></span>
+                      </div>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody class="subpage__table-tbody table-tbody">
+                  <tr
+                    class="subpage__table-tbody-tr table-tbody-tr table-tbody-tr--sorted"
+                  >
+                    <td class="subpage__table-tbody-tr-dt table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        17/08/02 (12:58)
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        34,425.00
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        cpl (200)
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        bank
+                      </div>
+                    </td>
+                  </tr>
+                  <tr
+                    class="subpage__table-tbody-tr table-tbody-tr table-tbody-tr--sorted"
+                  >
+                    <td class="subpage__table-tbody-tr-dt table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        17/08/02 (12:58)
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        34,425.00
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        cpl (200)
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        bank
+                      </div>
+                    </td>
+                  </tr>
+                  <tr
+                    class="subpage__table-tbody-tr table-tbody-tr table-tbody-tr--sorted"
+                  >
+                    <td class="subpage__table-tbody-tr-dt table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        17/08/02 (12:58)
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        34,425.00
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        cpl (200)
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        bank
+                      </div>
+                    </td>
+                  </tr>
+                  <tr
+                    class="subpage__table-tbody-tr table-tbody-tr table-tbody-tr--sorted"
+                  >
+                    <td class="subpage__table-tbody-tr-dt table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        17/08/02 (12:58)
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        34,425.00
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        cpl (200)
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        bank
+                      </div>
+                    </td>
+                  </tr>
+                  <tr
+                    class="subpage__table-tbody-tr table-tbody-tr table-tbody-tr--sorted"
+                  >
+                    <td class="subpage__table-tbody-tr-dt table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        17/08/02 (12:58)
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        34,425.00
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        cpl (200)
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        bank
+                      </div>
+                    </td>
+                  </tr>
+                  <tr
+                    class="subpage__table-tbody-tr table-tbody-tr table-tbody-tr--sorted"
+                  >
+                    <td class="subpage__table-tbody-tr-dt table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        17/08/02 (12:58)
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        34,425.00
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        cpl (200)
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        bank
+                      </div>
+                    </td>
+                  </tr>
+                  <tr
+                    class="subpage__table-tbody-tr table-tbody-tr table-tbody-tr--sorted"
+                  >
+                    <td class="subpage__table-tbody-tr-dt table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        17/08/02 (12:58)
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        34,425.00
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        cpl (200)
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        bank
+                      </div>
+                    </td>
+                  </tr>
+                  <tr
+                    class="subpage__table-tbody-tr table-tbody-tr table-tbody-tr--sorted"
+                  >
+                    <td class="subpage__table-tbody-tr-dt table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        17/08/02 (12:58)
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        34,425.00
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        cpl (200)
+                      </div>
+                    </td>
+                    <td class="table-tbody-tr-td">
+                      <div
+                        class="subpage__table-tbody-tr-td-tdContainer table-tbody-tr-td-tdContainer table-tr-td-tdContainer"
+                      >
+                        bank
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="row">
+              <div class="subpage__paginationContainer">
+                <div class="pagination">
+                  <i class="fas fa-arrow-left"></i>
+                  <a class="active" href="#">1</a>
+                  <a href="#">2</a>
+                  <a href="#">3</a>
+                  <a href="#">4</a>
+                  <a href="#">5</a>
+                  <a href="#">6</a>
+                  <a href="#">7</a>
+                  <a href="#">8</a>
+                  <a href="#">9</a>
+                  <i class="fas fa-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="overlay" id="overlay">
+        <div class="modal modal-chat" id="manager">
+          <div class="btn-close js--close-modal">x</div>
+          <div class="section-heading">
+            <h2 class="section-heading-title">
+              Online chat with Your personal manager
+            </h2>
           </div>
           <div class="chat__manager-wrapper">
             <div class="chat__manager">
-              <img src="/images/2-layers.png" class="chat__manager-image">
+              <img src="/images/2-layers.png" class="chat__manager-image" />
               <div class="chat__manager-details">
                 <h4 class="chat__manager-name">Michael E.</h4>
                 <p class="chat__manager-online">online</p>
               </div>
             </div>
           </div>
-          <div class="chat__history">
-
+          <div class="chat__history"></div>
+          <div class="chat__footer">
+            <div class="chat__input">
+              <i class="fas fa-comment-dots message-icon"></i>
+              <input
+                type="text"
+                name="chat-input"
+                class="chat__input-field"
+                placeholder="Enter the message..."
+              />
             </div>
-            <div class="chat__footer"> 
-                <div class="chat__input">
-                    <svg version="1.1" id="Layer_1" class="svg_message" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    viewBox="0 0 16 17" style="enable-background:new 0 0 16 17;" xml:space="preserve">
-                 <path d="M16,15.7L13.3,13H7.5C3.9,13,1,10.1,1,6.5S3.9,0,7.5,0h2C13.1,0,16,2.9,16,6.5V15.7z M7.5,1C4.5,1,2,3.5,2,6.5
-                   c0,3,2.5,5.5,5.5,5.5h6.2l1.3,1.3V6.5c0-3-2.5-5.5-5.5-5.5H7.5z"/>
-                 </svg>
-                 
-                  <input type="text" name="chat-input" class="chat__input-field" placeholder="Enter the message...">
-                </div>
-                <div class="btn-wrapper btn__chat">
-                  <button type="submit" class="btn-orange">Send</button>
-                </div>
+            <div class="btn-wrapper btn__chat">
+              <button type="submit" class="btn-orange">Send</button>
             </div>
           </div>
-          <div class="modal modal-login" id="login">
-              <div class="btn-close js--close-modal">x</div>
-                <div class="section-heading">
-                  <h2 class="section-heading-title">Login</h2>
-                </div>
-                  <div class="login__footer"> 
-                      <div class="login__input">
-                        <input type="text" name="login-input" class="login__input-field" placeholder="login name">
-                        <input type="password" name="login-input" class="login__input-field" placeholder="password">
-                      </div>
-                      <div class="btn-wrapper btn__login">
-                        <button type="submit" class="btn-orange">Enter</button>
-                      </div>
-                  </div>
-                </div>
-                <div class="modal modal-quit" id="quit">
-                    <div class="btn-close js--close-modal">x</div>
-                      <div class="section-heading">
-                        <h2 class="section-heading-title title-quit">Do you really want to quit?</h2>
-                      </div>
-                        <div class="login__footer"> 
-                            <div class="btn-wrapper">
-                              <button type="submit" class="btn-orange btn__cancel">Cancel</button>
-                            </div>
-                            <div class="btn-wrapper">
-                                <button type="submit" class="btn-orange btn__quit">Quit</button>
-                              </div>
-                        </div>
-                      </div>
+        </div>
+        <div class="modal modal-login" id="login">
+          <div class="btn-close js--close-modal">x</div>
+          <div class="section-heading">
+            <h2 class="section-heading-title">Login</h2>
+          </div>
+          <div class="login__footer">
+            <div class="login__input">
+              <i class="fas fa-user user-icon"></i>
+              <input
+                type="text"
+                name="login-input"
+                class="login__input-field"
+                placeholder="login name"
+              />
+              <i class="fas fa-key key-icon"></i>
+              <input
+                type="password"
+                name="login-input"
+                class="login__input-field"
+                placeholder="password"
+              />
+            </div>
+            <div class="btn-wrapper btn__login">
+              <button type="submit" class="btn-orange">Enter</button>
+            </div>
+          </div>
+        </div>
+        <div class="modal modal-quit" id="quit">
+          <div class="btn-close js--close-modal">x</div>
+          <div class="section-heading">
+            <h2 class="section-heading-title title-quit">
+              Do you really want to quit?
+            </h2>
+          </div>
+          <div class="login__footer">
+            <div class="btn-wrapper">
+              <button type="submit" class="btn-orange btn__cancel">
+                Cancel
+              </button>
+            </div>
+            <div class="btn-wrapper">
+              <button type="submit" class="btn-orange btn__quit">Quit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar-overlay"></div>
     </div>
-  </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
-  <script src="/js/script.js" type="text/javascript"></script>
-</body>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="/js/script.js" type="text/javascript"></script>
+  </body>
 </html>

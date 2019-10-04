@@ -14,7 +14,7 @@
 }
 
 .linked {
-  @include flex(column, center, space-between);
+  @include flex(column, center, center);
 
   width: 100%;
   border-top: 2px solid $disabledBtn-color;
@@ -32,35 +32,48 @@
   color: $greyBtn-color;
 }
 
+.linked-title,
 .linked-link {
-  width: 60%;
   @include flex(row, center, center);
+
+  width: 100%;
+  padding: 0;
 }
 
-.link_svg,
-.trash_svg {
-  display: none;
+.linked-link {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.link-icon,
+.trash-icon {
+  visibility: hidden;
+  opacity:0;
   cursor: pointer;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.link-icon {
+  color: $circleTabOrange-color;
+}
+
+.link_icons {
+  @include flex(row, center, center);
 }
 
 .links-list li:hover {
   background-color: $bgTableHover-color;
   transition: $transition-main;
 
-  .link_svg {
-    display: inline-block;
-    width: 16px;
-    height: 8px;
-    fill: $circleTabOrange-color;
-    margin-right: 20px;
+  .link-icon {
+    visibility: visible;
+    opacity: 1;
   }
 
-  .trash_svg {
-    display: inline-block;
-    fill: $walletP-color;
-    width: 14px;
-    height: 15px;
-    margin-right: 20px;
+  .trash-icon {
+    visibility: visible;
+    opacity: 1;
   }
 }
 
