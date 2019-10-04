@@ -72,3 +72,11 @@
     width: 100%;
   }
 }
+
+.fas {
+  @include flex(row, center, center);
+}
+
+.refresh-icon {
+  color: white;
+}

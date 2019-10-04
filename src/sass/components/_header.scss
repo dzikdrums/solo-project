@@ -18,8 +18,8 @@
   transition: $transition-hover;
 }
 
-.header__item-icon {
-  fill: $headers-color;
+.fas {
+  color: $headers-color;
 }
 
 .dollars {
@@ -50,29 +50,7 @@
   }
 }
 
-.icon-wallet {
-  width: 17px;
-  height: 18px;
-}
-
-.icon-arrow {
-  width: 11px;
-  height: 7px;
-}
-
-.icon-ring {
-  width: 16px;
-  height: 17px;
-}
-
 .icon-name {
-  width: 17px;
-  height: 17px;
   border-radius: 50%;
   border: 1px solid $manager-color;
-}
-
-.icon-quit {
-  width: 19px;
-  height: 15px;
 }

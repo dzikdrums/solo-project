@@ -1,11 +1,11 @@
 .form-row {
-    width: 45%;
-  }
-  
-  .field {
-    @include flex(row, center, space-between);
-  
-    padding: 7px;
-    align-items: center;
-    font: $text-font;
-  }
+  width: 45%;
+}
+
+.field {
+  @include flex(row, center, space-between);
+
+  padding: 7px;
+  align-items: center;
+  font: $text-font;
+}

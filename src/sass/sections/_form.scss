@@ -18,9 +18,10 @@ form {
 
 input {
   border: 1px solid $headers-color;
-  border-radius: 2px;
+  border-radius: 4px;
   height: 30px;
   width: 60%;
+  outline: none;
 }
 
 .btn-wrapper {

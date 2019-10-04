@@ -1,20 +1,20 @@
 .modal {
-    margin: auto;
-    background-color: $btnFont-color;
-    position: relative;
-    display: none;
-  }
+  margin: auto;
+  background-color: $btnFont-color;
+  position: relative;
+  display: none;
+}
 
-  .modal.show {
-    display: block;
-  }
+.modal.show {
+  display: block;
+}
 
-  .modal .btn-close {
-    position: absolute;
-    font-size: 30px;
-    color: $headers-color;
-    top: 0;
-    right: 0;
-    padding: 5px 10px;
-    cursor: pointer;
-  }
+.modal .btn-close {
+  position: absolute;
+  font-size: 30px;
+  color: $headers-color;
+  top: 0;
+  right: 0;
+  padding: 5px 10px;
+  cursor: pointer;
+}

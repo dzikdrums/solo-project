@@ -49,7 +49,7 @@
     position: relative
 }
 
-.svg_message {
+.message-icon {
     top: 13px;
     left: 15px;
     width: 20px;
@@ -62,10 +62,10 @@
     width: 100%;
     border: 1px solid $disabledBtn-color;
     outline: none;
+    padding-left: 35px;
 
     &::-webkit-input-placeholder {
         color: $headers-color;
-        padding-left: 35px;
       }
 }
 
@@ -73,4 +73,3 @@
     padding: 0 10px;
     width: 100px;
 }
-
