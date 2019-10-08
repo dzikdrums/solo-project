@@ -301,7 +301,7 @@ input { border: 1px solid #a6a6a6; border-radius: 4px; height: 30px; width: 60%;
 
 .chat__manager-online { display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; -ms-flex-align: center; align-items: center; -ms-flex-pack: center; justify-content: center; margin: 0; padding: 0 2px; color: #ffffff; font: 300 13px/42px "Roboto", sans-serif; background-color: #04ae00; width: 43%; height: 25px; border-radius: 4px; }
 
-.chat__history { width: 100%; height: 200px; border-bottom: 2px solid #e3e3e3; }
+.chat__history { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-align: start; align-items: flex-start; -ms-flex-pack: start; justify-content: flex-start; width: 100%; overflow: scroll; height: 200px; border-bottom: 2px solid #e3e3e3; }
 
 .chat__footer, .login__footer { display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; -ms-flex-align: center; align-items: center; -ms-flex-pack: center; justify-content: center; }
 
@@ -314,6 +314,14 @@ input { border: 1px solid #a6a6a6; border-radius: 4px; height: 30px; width: 60%;
 .chat__input-field::-webkit-input-placeholder { color: #a6a6a6; }
 
 .btn__chat { padding: 0 10px; width: 100px; }
+
+.chat__history-inner { position: relative; display: inline-block; border-radius: 4px; border-top-left-radius: 0; padding: 10px; margin: 12px; font: 300 13px/17px "Roboto", sans-serif; color: #ffffff; background-color: #a6a6a6; }
+
+.chat__history-inner:after { content: ""; position: absolute; left: 0; width: 0; height: 0; border: 20px solid transparent; border-bottom-color: #a6a6a6; border-top: 0; border-left: 0; margin-top: -20px; }
+
+.chat-bot { color: #333333; background-color: #e3e3e3; }
+
+.chat-bot:after { left: 121px; width: 0; height: 0; border: 20px solid transparent; border-bottom-color: #e3e3e3; border-top: 0; border-right: 0; margin-top: -20px; }
 
 .login_footer { display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; -ms-flex-align: center; align-items: center; -ms-flex-pack: center; justify-content: center; }
 
