@@ -6,6 +6,36 @@ const headerWrapper = document.querySelector(".header-whitebar");
 const sidebarListItems = document.querySelectorAll(".sidebar__list-item");
 const allWindows = document.querySelectorAll("section");
 const sidebarOverlay = document.querySelector(".sidebar-overlay");
+const chatHistory = document.querySelector(".chat__history");
+const chatInput = document.querySelector(".chat__input-field");
+const chatSendBtn = document.querySelector(".btn-send");
+
+// =========================
+// ======= CHAT ==========
+//==========================
+
+function addMessage() {
+  const chatMessage = chatInput.value;
+  const chatMessageHTML =
+    '<p class="chat__history-inner chat-user">' + chatMessage + "</p>";
+  chatInput.value = "";
+
+  chatHistory.innerHTML += chatMessageHTML;
+}
+
+chatSendBtn.addEventListener("click", function() {
+  addMessage();
+});
+
+document.addEventListener("keyup", function(e) {
+  if (e.keyCode === 13) {
+    addMessage();
+  }
+});
+
+// =========================
+// ======= HAMBURGER ==========
+//==========================
 
 const hamburgerClickHandler = () => {
   hamburger.classList.toggle("hamburger-active");

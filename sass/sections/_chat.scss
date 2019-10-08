@@ -1,75 +1,118 @@
 .modal-chat {
-    width: 80%;
+  width: 80%;
 }
 
 .chat__manager {
-    display: flex;
-    border-bottom: 2px solid $disabledBtn-color;
+  display: flex;
+  border-bottom: 2px solid $disabledBtn-color;
 }
 
 .chat__manager-image {
-    width: 70px;
-    height: 70px;
-    margin: 5px 10px 20px;
+  width: 70px;
+  height: 70px;
+  margin: 5px 10px 20px;
 }
 
 .chat__manager-name {
-    margin: 0;
-    font: $wallet-font;
+  margin: 0;
+  font: $wallet-font;
 }
 
 .chat__manager-online {
-    @include flex(row, center, center);
+  @include flex(row, center, center);
 
-    margin: 0;
-    padding: 0 2px;
-    color: $btnFont-color;
-    font: $smallLink-font;
-    background-color: $greenCheckBox-color;
-    width: 43%;
-    height: 25px;
-    border-radius: 4px;
+  margin: 0;
+  padding: 0 2px;
+  color: $btnFont-color;
+  font: $smallLink-font;
+  background-color: $greenCheckBox-color;
+  width: 43%;
+  height: 25px;
+  border-radius: 4px;
 }
 
 .chat__history {
-    width: 100%;
-    height: 200px;
-    border-bottom: 2px solid $disabledBtn-color;
+  @include flex(column, flex-start, flex-start);
+
+  width: 100%;
+  overflow: scroll;
+  height: 200px;
+  border-bottom: 2px solid $disabledBtn-color;
 }
 
-.chat__footer, 
+.chat__footer,
 .login__footer {
-    @include flex(row, center, center);
-
+  @include flex(row, center, center);
 }
 
 .chat__input {
-    width: 90%;
-    padding-left: 7px;
-    position: relative
+  width: 90%;
+  padding-left: 7px;
+  position: relative;
 }
 
 .message-icon {
-    top: 13px;
-    left: 15px;
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    fill: $greyBtnHover-color;
+  top: 13px;
+  left: 15px;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  fill: $greyBtnHover-color;
 }
 
 .chat__input-field {
-    width: 100%;
-    border: 1px solid $disabledBtn-color;
-    outline: none;
-    padding-left: 35px;
+  width: 100%;
+  border: 1px solid $disabledBtn-color;
+  outline: none;
+  padding-left: 35px;
 
-    &::-webkit-input-placeholder {
-        color: $headers-color;
-      }
+  &::-webkit-input-placeholder {
+    color: $headers-color;
+  }
 }
 
 .btn__chat {
-    padding: 0 10px;
-    width: 100px;
+  padding: 0 10px;
+  width: 100px;
+}
+
+.chat__history-inner {
+  position: relative;
+  display: inline-block;
+  border-radius: 4px;
+  border-top-left-radius: 0;
+  padding: 10px;
+  margin: 12px;
+  font: $tdTableSorted-font;
+  color: $btnFont-color;
+  background-color: $headers-color;
+}
+
+.chat__history-inner:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-bottom-color: $headers-color;
+  border-top: 0;
+  border-left: 0;
+  margin-top: -20px;
+}
+
+.chat-bot {
+  color: $text-color;
+  background-color: $disabledBtn-color;
+}
+
+.chat-bot:after {
+  left: 121px;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-bottom-color: $disabledBtn-color;
+  border-top: 0;
+  border-right: 0;
+  margin-top: -20px;
 }
