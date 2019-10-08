@@ -23,6 +23,7 @@
 
   .hamburger {
     display: inline-block;
+    position: fixed;
   }
 
   // Header
@@ -93,6 +94,12 @@
 @media (max-width: 1000px) {
   .links-lists-wrapper {
     width: 80%;
+  }
+}
+
+@media (min-width: 720px) {
+  .sidebar-overlay {
+    display: none;
   }
 }
 
